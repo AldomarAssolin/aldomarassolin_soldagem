@@ -12,7 +12,7 @@ function App() {
         <p>Estamos atualizando o site!</p>
         <p>Em breve estaremos no ar novamente.</p>
 
-        <a className="btn bg-info btn-outline-dark m-auto" href={curriculo}>
+        <a className="btn" href={curriculo} target="_blank" rel="noreferrer">
           <i className="fa fa-download mx-2" /> Currículo em PDF
         </a>
 
