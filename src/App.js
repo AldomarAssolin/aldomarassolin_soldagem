@@ -1,19 +1,13 @@
-
-import { BrowserRouter } from 'react-router-dom';
+import  'bootstrap/dist/css/bootstrap.min.css' ;
 import './App.css';
-
-import Routers from './routes/Routes'
-//import Single from './pages/single';
-
-
+//import { Layout } from './views/Layout/Layout';
+import Single from './views/pages/single';
 
 function App() {
   return (
     <div className="App">
-    <BrowserRouter>
-      <Routers/>
-    </BrowserRouter>
-      {/* <Single/> */}
+      <Single/>
+      {/* <Layout/> */}
     </div>
   );
 }
