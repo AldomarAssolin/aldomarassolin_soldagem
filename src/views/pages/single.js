@@ -1,8 +1,8 @@
 import React from 'react'
 
-import logo from '../images/logos/logo192.png';
+import logo from '../../images/logos/logo192.png';
 
-import curriculo from '../pdf/curriculo_22.pdf'
+import curriculo from '../../pdf/curriculo_22.pdf'
 
 const Single = () => {
   return (

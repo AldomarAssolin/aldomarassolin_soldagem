@@ -1,14 +1,19 @@
 
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-//import Login from './pages/admin/login';
-import Single from './pages/single';
+
+import Routers from './routes/Routes'
+//import Single from './pages/single';
 
 
 
 function App() {
   return (
     <div className="App">
-      <Single/>
+    <BrowserRouter>
+      <Routers/>
+    </BrowserRouter>
+      {/* <Single/> */}
     </div>
   );
 }
