@@ -48,3 +48,55 @@
 .message-site{
  font-style: italic;
 }
+
+/* LOGIN PAGE */
+
+.login-container{
+  min-height: 100vh;
+  background-color: #000;
+}
+
+.login-form{
+  min-width: 100%;
+  min-height: calc(100vh - 40vmin);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form form{
+  min-width: 75%;
+  padding: 1em;
+  color: #ccc;
+
+}
+
+.form-control{
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-control input{
+  width: 100%;
+  padding: .75em 0;
+  padding-left: 1em;
+  margin-bottom: 1em;
+  color: #000;
+  border-radius: .5em;
+  border: none;
+  outline: none;
+}
+
+.form-control-btn input{
+  padding: .75em 4em;
+  border: none;
+  border-radius: .5em;
+  background-color: #056d8a;
+  cursor: pointer;
+}
