@@ -8,14 +8,16 @@ const Single = () => {
   return (
     <>
         <header className='App-header'>
-        <div className="App-logo">
-            <img src={logo} alt="Logomarca" />
-        </div>
-            <h1>Aldomar Assolin</h1>
-            <h3>Soldador</h3>
-            <a className="btn App-link" href={curriculo} target="_blank" rel="noreferrer">
-            <i className="fa fa-download mx-2" /> Currículo em PDF
-            </a>
+            <div className="App-logo">
+                <img src={logo} alt="Logomarca" />
+            </div>
+            <div className="App-text">
+                <h1>Aldomar Assolin</h1>
+                <h3>Soldador</h3>
+                <a className="btn App-link" href={curriculo} target="_blank" rel="noreferrer">
+                <i className="fa fa-download mx-2" /> Currículo em PDF
+                </a>
+            </div>
         </header>
         
         <div className="message-site">

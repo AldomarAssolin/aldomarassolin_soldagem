@@ -19,6 +19,7 @@
 
 .App-logo img{
   border-radius: 50%;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -140,4 +141,22 @@ footer{
   border-radius: .5em;
   background-color: #056d8a;
   cursor: pointer;
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width:768px){
+  .App-logo{
+    margin: 1em 0;
+  }
+  .App-text{
+    padding: 1em 0;
+  }
+}
+
+@media screen and (max-width:450px){
+  .App-logo{
+    margin: 3em 0;
+  }
 }
