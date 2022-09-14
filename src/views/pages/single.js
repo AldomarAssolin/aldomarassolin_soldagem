@@ -4,6 +4,8 @@ import logo from '../../images/logos/logo192.png';
 
 import curriculo from '../../pdf/curriculo_22.pdf'
 
+import Title from '../components/Title'
+
 const Single = () => {
   return (
     <>
@@ -12,8 +14,7 @@ const Single = () => {
                 <img src={logo} alt="Logomarca" />
             </div>
             <div className="App-text">
-                <h1>Aldomar Assolin</h1>
-                <h3>Soldador</h3>
+                <Title title='Aldomar Assolin' subtitle='Soldador'/>
                 <a className="btn App-link" href={curriculo} target="_blank" rel="noreferrer">
                 <i className="fa fa-download mx-2" /> Currículo em PDF
                 </a>
