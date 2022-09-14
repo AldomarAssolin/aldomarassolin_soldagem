@@ -1,0 +1,10 @@
+.Title_Section{
+    padding-top: 3em;
+    padding-bottom: 1em;
+    margin-bottom: 3em;
+    border-bottom: 1px solid var(--clr-primary);
+}
+
+.Title_Section h2{
+    margin-bottom: .5em;
+}
