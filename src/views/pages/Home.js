@@ -61,7 +61,7 @@ const Home = () => {
         <Section className='apresentation'>
             <Title classes={styles.Title_Section} title="Quem Sou?" subtitle="Soldador, Técnico em Soldagem, Operador de Soldagem"/>
             <SectionBox 
-              classes={stylesSection.justifyText}
+              classes={`${stylesSection.justifyText} px-3`}
               text="Ao longo de muitos anos atuando no setor metalúrgico, me identifiquei com a soldagem, determinado a desenvolver 
               minhas habilidades e conhecimentos acerca deste tópico me dediquei a aprender tudo que pude na área. Desenvolvi habilidades desde a 
               montagem de estruturas gerais à soldagem de tubulções. Com o desenvolvimento acelerado de novas tecnologias, vieram novos desafios
