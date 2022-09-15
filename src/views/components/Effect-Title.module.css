@@ -1,0 +1,14 @@
+.effect{
+    width: 55px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.effectSpan{
+    width: 100%;
+    height: 5px;
+    background-color: var(--clr-primary);
+    margin-right: .5em;
+    border-radius: 5px;
+}

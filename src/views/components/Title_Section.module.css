@@ -8,3 +8,16 @@
 .Title_Section h2{
     margin-bottom: .5em;
 }
+
+.Title_box{
+    width: 100%;
+    text-align: start;
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+
+.Title_box h1,
+.Title_box h2{
+    display: flex;
+    margin: 0;
+}

@@ -3,22 +3,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap');
 
 :root{
-  --clr-primary: #d48e0c;
+  --clr-primary: #1adaca;
+  --clr-1:#d48e0c ;
   --clr-secondary: #ee5011;
   --fnt-title: bold 2.4em 'Raleway', sans-serif;
   --fnt-subtitle: normal 1.4em 'Montserrat', sans-serif;
   --fnt-text: normal 'Lato', sans-serif;
 
-  --clr-hover: #ee7511;
+  --clr-hover1: #ee7511;
+  --clr-hover: #095c58;
 }
 
-h1,h2{
+h2{
   color: var(--clr-primary);
   font: var(--fnt-title);
 }
 
-h3,h5{
+h1,h3{
   font: var(--fnt-subtitle);
+}
+
+.justify{
+  text-align: justify;
 }
 
 .App {
@@ -57,7 +63,8 @@ h3,h5{
 }
 
 .App-link {
-  color: #61dafb;
+  color: #1adaca;
+  transition: .5s;
 }
 
 @keyframes App-logo-spin {
@@ -70,7 +77,7 @@ h3,h5{
 }
 
 .message-site{
-  padding-top: 2em;
+  padding: 2em;
   font-style: italic;
 }
 
@@ -79,6 +86,8 @@ h3,h5{
 .links{
   text-decoration: none;
   color: var(--clr-primary);
+  font: var(--fnt-text);
+  transition: .3s;
 }
 
 .links:hover{
