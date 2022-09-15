@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Button, Col, Container, Row } from 'react-bootstrap'
+import { Button, Carousel, Col, Container, Row } from 'react-bootstrap'
 
 //Components
 import Title from '../components/Title_Section'
@@ -8,6 +8,7 @@ import SectionBox from '../components/Section_Box'
 import Section from '../components/Section'
 import TitleEffect from '../components/Title_Effect'
 import CardsExperinces from '../components/Cards_Experinces'
+import curriculo from '../../pdf/curriculo_22.pdf'
 
 //Styles
 import styles from '../components/Title_Section.module.css'
@@ -18,6 +19,9 @@ import IMGBanner250 from '../../images/img-home/Logo_Brancox250.png'
 import IMGBanner500 from '../../images/img-home/Logo_Brancox500.png'
 import AgrimecLogo from '../../images/experiences/agrimec-implementos-agricolas-logo.jpg'
 import CofelmaLogo from '../../images/experiences/logo-cofelma.png'
+import ImgWelder1 from '../../images/carousel/solda-robo.jpg'
+import ImgWelder2 from '../../images/carousel/trabalhador-soldagem.jpg'
+import ImgWelder3 from '../../images/carousel/badWelde2.jpg'
 
 const Home = () => {
   
@@ -41,6 +45,9 @@ const Home = () => {
                   classes={`${stylesSection.Section_Box_Left} ${stylesSection.justify} d-flex flex-column align-items-start justify-content-center`}
               >
                 <div className='text-end w-100'>
+                  <Button variant=''>
+                    <a className="links" href={curriculo} target="_blank" rel="noreferrer">Currículo em PDF</a>
+                  </Button>
                   <Button variant=''>
                     <Link to='/About' className='links'>Saiba Mais...</Link>
                   </Button>
@@ -71,41 +78,71 @@ const Home = () => {
               diversas dessas tecnologias, com os quais desenvolvo meu trabalho e compartilho esse conhecimento com demais colegas."
             />
             <Section classes={stylesSection.Section}>
-              <SectionBox
-                titles={
-                  <Title 
-                    classes={styles.Title_box} 
-                    title="Minha Box" 
-                    subtitle="Essa é minha box esquerda!" 
-                    effect={<TitleEffect/>} 
-                  />
-                }
-                text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni quod velit, facilis necessitatibus 
-                dolores saepe aperiam sint, consequatur atque laudantium blanditiis ullam, consectetur nemo et minima illum quia cum."
-                classes={stylesSection.Section_Box_Left}
-              >
-              </SectionBox>
-              <SectionBox
-                titles={
-                  <Title 
-                    classes={styles.Title_box} 
-                    title="Minha Box" 
-                    subtitle="Essa é minha box direita!" 
-                    effect={<TitleEffect/>} 
-                  />
-                }
-                classes={stylesSection.Section_Box_Right}
-                text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni quod velit, facilis necessitatibus 
-                dolores saepe aperiam sint, consequatur atque laudantium blanditiis ullam, consectetur nemo et minima illum quia cum."
-              />
+                  <Row>
+                    <Col sm={6}>
+                        <SectionBox
+                          titles={
+                            <Title 
+                              classes={styles.Title_box} 
+                              title="Soldador" 
+                              subtitle="De estruturas metálicas à tubulações" 
+                              effect={<TitleEffect/>} 
+                            />
+                          }
+                          text="Soldagem nos processos GMAW, GMAWP, FCAW, SMAW, GTAW, SAW. Soldagem automatizada, fontes eletrônicas, com corrente 
+                          pulsada."
+                          classes={`${stylesSection.Section_Box_Left} ${stylesSection.justify} px-3`}
+                        />
+                    </Col>
+                    <Col sm={6}>
+                        <SectionBox
+                          classes={stylesSection.Section_Box_Right}
+                        >
+                          <Carousel>
+                            <Carousel.Item>
+                              <img
+                                className="d-block w-100"
+                                src={ImgWelder1}
+                                alt="First slide"
+                              />
+                              <Carousel.Caption className='fs-6'>
+                                <Title title='Automação' subtitle='Operador de Soldagem' />
+                              </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                              <img
+                                className="d-block w-100"
+                                src={ImgWelder2}
+                                alt="Second slide"
+                              />
+
+                              <Carousel.Caption>
+                                <Title title='Processos' subtitle='Todos os processos de soldagem' />
+                              </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                              <img
+                                className="d-block w-100"
+                                src={ImgWelder3}
+                                alt="Third slide"
+                              />
+
+                              <Carousel.Caption>
+                                <Title classes='text-secondary' title='Formação' subtitle='técnico em Soldagem' />
+                              </Carousel.Caption>
+                            </Carousel.Item>
+                          </Carousel>
+                        </SectionBox>
+                    </Col>
+                  </Row>
             </Section>
         </Section>
        
         <Section>
               <Title 
                 classes={styles.Title_Section} 
-                title="Seção de Cards" 
-                subtitle="Aqui ficam os cards de experiências"  
+                title="Experiências Profissionais" 
+                subtitle="Uma carreira de sucesso traz junto muitos desafios"  
               />
               <Section>
                 <CardsExperinces
