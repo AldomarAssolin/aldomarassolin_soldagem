@@ -178,6 +178,11 @@ const Home = () => {
                   cardDataIn='01/07/2008'
                   cardDataOut='07/10/2010'
                 />
+                <div className='text-center py-3 w-100'>
+                  <Button variant=''>
+                    <Link to='/Experience' className='links'>Saiba Mais...</Link>
+                  </Button>
+                </div>
               </Section>
         </Section>
     </Container>
