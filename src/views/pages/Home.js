@@ -8,20 +8,21 @@ import SectionBox from '../components/Section_Box'
 import Section from '../components/Section'
 import TitleEffect from '../components/Title_Effect'
 import CardsExperinces from '../components/Cards_Experinces'
-import curriculo from '../../pdf/curriculo_22.pdf'
+import curriculo from '../../public/pdf/curriculo_22.pdf'
 
 //Styles
 import styles from '../components/Title_Section.module.css'
 import stylesSection from '../components/Section.module.css'
 
 //Images
-import IMGBanner250 from '../../images/img-home/Logo_Brancox250.png'
-import IMGBanner500 from '../../images/img-home/Logo_Brancox500.png'
-import AgrimecLogo from '../../images/experiences/agrimec-implementos-agricolas-logo.jpg'
-import CofelmaLogo from '../../images/experiences/logo-cofelma.png'
-import ImgWelder1 from '../../images/carousel/solda-robo.jpg'
-import ImgWelder2 from '../../images/carousel/trabalhador-soldagem.jpg'
-import ImgWelder3 from '../../images/carousel/badWelde2.jpg'
+import IMGBanner250 from '../../public/images/img-home/Logo_Brancox250.png'
+import IMGBanner500 from '../../public/images/img-home/Logo_Brancox500.png'
+import AgrimecLogo from '../../public/images/experiences/agrimec-implementos-agricolas-logo.jpg'
+import CofelmaLogo from '../../public/images/experiences/logo-cofelma.png'
+import ImgWelder1 from '../../public/images/carousel/solda-robo.jpg'
+import ImgWelder2 from '../../public/images/carousel/trabalhador-soldagem.jpg'
+import ImgWelder3 from '../../public/images/carousel/badWelde2.jpg'
+import GoToTop from '../components/GoToTop'
 
 const Home = () => {
   
@@ -65,7 +66,8 @@ const Home = () => {
             </Col>
           </Row>
         </Section>
-        <Section className='apresentation'>
+
+        <Section className='about'>
             <Title classes={styles.Title_Section} title="Quem Sou?" subtitle="Soldador, Técnico em Soldagem, Operador de Soldagem"/>
             <SectionBox 
               classes={`${stylesSection.justifyText} px-3`}
@@ -92,7 +94,9 @@ const Home = () => {
                           text="Soldagem nos processos GMAW, GMAWP, FCAW, SMAW, GTAW, SAW. Soldagem automatizada, fontes eletrônicas, com corrente 
                           pulsada."
                           classes={`${stylesSection.Section_Box_Left} ${stylesSection.justify} px-3`}
-                        />
+                        >
+                          <Link to='/About' className='links'>Saiba Mais...</Link>
+                        </SectionBox>
                     </Col>
                     <Col sm={6}>
                         <SectionBox
@@ -138,7 +142,7 @@ const Home = () => {
             </Section>
         </Section>
        
-        <Section>
+        <Section id='experiences'>
               <Title 
                 classes={styles.Title_Section} 
                 title="Experiências Profissionais" 
@@ -179,12 +183,46 @@ const Home = () => {
                   cardDataOut='07/10/2010'
                 />
                 <div className='text-center py-3 w-100'>
-                  <Button variant=''>
+                  
                     <Link to='/Experience' className='links'>Saiba Mais...</Link>
-                  </Button>
+                 
                 </div>
               </Section>
         </Section>
+
+        <Section id='competences'>
+          <Container>
+                <Title classes={styles.Title_Section} title='Competências' subtitle='Conhecimento é algo muito importante, Essas são minhas Softskills.'/>
+                <Section>
+                  <SectionBox 
+                    classes={`${stylesSection.justifyText} px-3`}
+                    text="Ao longo de muitos anos atuando no setor metalúrgico, me identifiquei com a soldagem, determinado a desenvolver 
+                    minhas habilidades e conhecimentos acerca deste tópico me dediquei a aprender tudo que pude na área. Desenvolvi habilidades desde a 
+                    montagem de estruturas gerais à soldagem de tubulções. Com o desenvolvimento acelerado de novas tecnologias, vieram novos desafios
+                    e com isso equipamentos e processos mais modernos, significando a necessidade de atualizações periódicas. Além da automação dos processos, 
+                    temos corrente pulsada nos processos MAG e TIG, nos trazendo mais complexidade no procedimento de soldagem e operação desses equipamentos. 
+                    No curso Técnico em Soldagem, cursado no Colégio Técnico Industrial de Santa Maria, RS, tive a portunidade de conhecer, estudar e entender 
+                    diversas dessas tecnologias, com os quais desenvolvo meu trabalho e compartilho esse conhecimento com demais colegas."
+                  >
+                    <ul className='mt-5'>
+                      <li className='text-start'>Cordialidade e simpatia no trato com as pessoas</li>
+                      <li className='text-start'>Capacidade de planejamento e organização para o cumprimento de prazos</li>
+                      <li className='text-start'>Zelo pela higiene e organização do local de trabalho</li>
+                      <li className='text-start'>Dinamismo para execução demúltiplas tarefas</li>
+                      <li className='text-start'>Bom relacionamento interpessoal para trabalho em equipe</li>
+                      <li className='text-start'>Capacidade de liderança e tomada de decisões assertivas</li>
+                      <li className='text-start'>Soldagem de tubulações</li>
+                      <li className='text-start'>Interpretação de projetos e desenhos técnicos</li>
+                      <li className='text-start'>Inspeção e controle de qualidade</li>
+                      <li className='text-start'>Solda MIG, TIG e arco elétrico</li>
+                      <li className='text-start'>Metalurgia</li>
+                      <li className='text-start'>Soldagem estrutural</li>
+                    </ul>
+                  </SectionBox>
+                </Section>
+          </Container>
+        </Section>
+    <GoToTop/>
     </Container>
   )
 }
