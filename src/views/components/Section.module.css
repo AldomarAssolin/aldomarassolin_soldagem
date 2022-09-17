@@ -21,6 +21,22 @@
     text-indent: 2em;
 }
 
+.carouselCompetences{
+    height: 450px !important;
+    background-color: #000;
+}
+
+.carouselCompetences img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: fill !important;
+}
+
+.CarouselCaption{
+    background-color: #000;
+    opacity: .8;
+}
+
 @media screen and (max-width:768px){
     .Section_Box_Left,
     .Section_Box_Right{

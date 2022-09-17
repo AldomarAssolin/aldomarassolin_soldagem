@@ -180,6 +180,11 @@ footer{
   cursor: pointer;
 }
 
+.list{
+  list-style-position: inside;
+  text-indent: 0;
+}
+
 
 /* MEDIA QUERY */
 
