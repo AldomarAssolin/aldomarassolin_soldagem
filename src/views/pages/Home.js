@@ -214,64 +214,42 @@ const Home = () => {
                       características que estão além da experiência profissional e da formação acadêmica do candidato.'
             />
             <Section>
-              <SectionBox classes="py-2 d-sm-flex align-items-center justify-content-around">
-                <Picture
-                  classes={`${stylePicture.picturesGroup} `}
-                  widthSM="768"
-                  widthLG="769"
-                  alt="Logomarca"
-                  src={lider}
-                  srcSetLG={lider}
-                  srcSetSM={lider}
-                />
-                <Picture
-                  classes={stylePicture.picturesGroup}
-                  widthSM="768"
-                  widthLG="769"
-                  alt="Logomarca"
-                  src={profissional}
-                  srcSetLG={profissional}
-                  srcSetSM={profissional}
-                />
-                <Picture
-                  classes={`${stylePicture.picturesGroup}`}
-                  widthSM="768"
-                  widthLG="769"
-                  alt="Logomarca"
-                  src={teamwork}
-                  srcSetLG={teamwork}
-                  srcSetSM={teamwork}
-                />
+              <SectionBox classes="py-2 d-sm-flex flex-wrap flex-s align-items-center justify-content-center">
+                <div className=' w-100 d-flex flex-wrap align-items-center justify-content-around mb-3'>
+                  <img
+                    className='mb-3'
+                    alt="Logomarca"
+                    src={lider}
+                  />
+                  <img
+                    className='mb-3'
+                    alt="Logomarca"
+                    src={profissional}
+                  />
+                  <img
+                    className='mb-3'
+                    alt="Logomarca"
+                    src={teamwork}
+                  />
+                </div>
+                <div className=' w-100 d-flex flex-wrap align-items-center justify-content-around'>
+                  <img
+                    className='mb-3'
+                    alt="Logomarca"
+                    src={weld}
+                  />
+                  <img
+                    className='mb-3'
+                    alt="Logomarca"
+                    src={mig}
+                  />
+                  <img
+                    className='mb-3'
+                    alt="Logomarca"
+                    src={pipelineWelder}
+                  />
+                </div>
               </SectionBox>
-              <SectionBox classes="py-2 d-sm-flex align-items-center justify-content-around">
-              <Picture
-                classes={`${stylePicture.picturesGroup} `}
-                widthSM="768"
-                widthLG="769"
-                alt="Logomarca"
-                src={weld}
-                srcSetLG={weld}
-                srcSetSM={weld}
-              />
-              <Picture
-                classes={stylePicture.picturesGroup}
-                widthSM="768"
-                widthLG="769"
-                alt="Logomarca"
-                src={mig}
-                srcSetLG={mig}
-                srcSetSM={mig}
-              />
-              <Picture
-                classes={`${stylePicture.picturesGroup}`}
-                widthSM="768"
-                widthLG="769"
-                alt="Logomarca"
-                src={pipelineWelder}
-                srcSetLG={pipelineWelder}
-                srcSetSM={pipelineWelder}
-              />
-            </SectionBox>
             </Section>
           </Section>
 
