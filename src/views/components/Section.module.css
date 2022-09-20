@@ -38,8 +38,14 @@
 }
 
 @media screen and (max-width:768px){
+    .Section{
+        padding: 0;
+    }
     .Section_Box_Left,
     .Section_Box_Right{
-        padding: 1em .5em;
+        padding: .5em 0;
+    }
+    .justifyText{
+        text-indent: 0;
     }
 }

@@ -10,10 +10,14 @@ import Section from '../components/Section'
 import TitleEffect from '../components/Title_Effect'
 import CardsExperinces from '../components/Cards_Experinces'
 import curriculo from '../../public/pdf/curriculo_22.pdf'
+import Picture from '../components/Picture'
+import ListGroup from '../components/ListGroup'
+import ListItem from '../components/ListItem'
 
 //Styles
 import styles from '../components/Title_Section.module.css'
 import stylesSection from '../components/Section.module.css'
+import stylePicture from '../components/Pictures.module.css'
 
 //Images
 import IMGBanner250 from '../../public/images/img-home/Logo_Brancox250.png'
@@ -23,9 +27,12 @@ import CofelmaLogo from '../../public/images/experiences/logo-cofelma.png'
 import ImgWelder1 from '../../public/images/carousel/solda-robo.jpg'
 import ImgWelder2 from '../../public/images/carousel/trabalhador-soldagem.jpg'
 import ImgWelder3 from '../../public/images/carousel/badWelde2.jpg'
-import lider from '../../public/images/softskills/lideranca-250x140.jpg'
-import resilience from '../../public/images/softskills/resilienciax250.jpg'
-import flexibilit from '../../public/images/softskills/flexibilidade-250x140.png'
+import lider from '../../public/images/softskills/liderance-250x155.png'
+import profissional from '../../public/images/softskills/profissionalism-250x155.png'
+import teamwork from '../../public/images/softskills/teamwork-250x155.png'
+import weld from '../../public/images/hardskills/solda-teste-250x155.jpg'
+import mig from '../../public/images/hardskills/solda-mig-250x155.jpg'
+import pipelineWelder from '../../public/images/hardskills/soldagem-de-tubulacao-250x155.jpg'
 
 const Home = () => {
 
@@ -60,11 +67,15 @@ const Home = () => {
           </Col>
           <Col sm={6}>
             <SectionBox classes={`${stylesSection.Section_Box_Right} d-flex align-items-center justify-content-center`}>
-              <picture>
-                <source media="(max-width: 767px)" srcSet={IMGBanner250} />
-                <source media="(min-width: 768px)" srcSet={IMGBanner500} />
-                <img src={IMGBanner500} alt="Logomarca" style={{ width: '100%' }} />
-              </picture>
+              <Picture
+                widthSM="768"
+                widthLG="769"
+                alt="Logomarca"
+                src={IMGBanner500}
+                srcSetLG={IMGBanner500}
+                srcSetSM={IMGBanner250}
+
+              />
             </SectionBox>
           </Col>
         </Row>
@@ -73,7 +84,7 @@ const Home = () => {
       <Section className='about'>
         <Title classes={styles.Title_Section} title="Quem Sou?" subtitle="Soldador, Técnico em Soldagem, Operador de Soldagem" />
         <SectionBox
-          classes={`${stylesSection.justifyText} px-3`}
+          classes={`${stylesSection.justifyText}`}
           text="Ao longo de muitos anos atuando no setor metalúrgico, me identifiquei com a soldagem, determinado a desenvolver 
               minhas habilidades e conhecimentos acerca deste tópico me dediquei a aprender tudo que pude na área. Desenvolvi habilidades desde a 
               montagem de estruturas gerais à soldagem de tubulções. Com o desenvolvimento acelerado de novas tecnologias, vieram novos desafios
@@ -84,11 +95,11 @@ const Home = () => {
         />
         <Section classes={stylesSection.Section}>
           <Row>
-            <Col sm={6}>
+            <Col sm={6} className='p-0 mb-5'>
               <SectionBox
                 titles={
                   <Title
-                    classes={styles.Title_box}
+                    classes={`${styles.Title_box}`}
                     title="Soldador"
                     subtitle="De estruturas metálicas à tubulações"
                     effect={<TitleEffect />}
@@ -108,7 +119,7 @@ const Home = () => {
                 <Carousel>
                   <Carousel.Item>
                     <img
-                      className="d-block w-100"
+                      className="d-block w-100  rounded-3"
                       src={ImgWelder1}
                       alt="First slide"
                     />
@@ -118,7 +129,7 @@ const Home = () => {
                   </Carousel.Item>
                   <Carousel.Item>
                     <img
-                      className="d-block w-100"
+                      className="d-block w-100 rounded-3"
                       src={ImgWelder2}
                       alt="Second slide"
                     />
@@ -129,7 +140,7 @@ const Home = () => {
                   </Carousel.Item>
                   <Carousel.Item>
                     <img
-                      className="d-block w-100"
+                      className="d-block w-100 rounded-3"
                       src={ImgWelder3}
                       alt="Third slide"
                     />
@@ -193,7 +204,7 @@ const Home = () => {
         </Section>
       </Section>
 
-      <Section id='competences'>
+      <Section id='competences' classes='bg-grey rounded-2 px-sm-2'>
         <Container>
           <Section>
             <Title
@@ -203,89 +214,112 @@ const Home = () => {
                       características que estão além da experiência profissional e da formação acadêmica do candidato.'
             />
             <Section>
-              <Carousel>
-                <Carousel.Item className={stylesSection.carouselCompetences}>
-                  <img
-                    className="d-block w-100"
-                    src={flexibilit}
-                    alt="First slide"
-                  />
-                  <Carousel.Caption  className={`rounded-3 ${stylesSection.CarouselCaption}`}>
-                    <Title title='Flexibilidade' subtitle='Novas demandas surgem a cada dia, novos desafios, novos cargos já em vigência' />
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item className={stylesSection.carouselCompetences}>
-                  <img
-                    className="d-block w-100"
-                    src={lider}
-                    alt="Second slide"
-                  />
-
-                  <Carousel.Caption className={`rounded-3 ${stylesSection.CarouselCaption}`}>
-                    <Title title='Liderança' subtitle='Exercer uma boa gestão de pessoas implica saber motivar e engajar as pessoas do seu time' />
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item className={stylesSection.carouselCompetences}>
-                  <img
-                    className="d-block w-100"
-                    src={resilience}
-                    alt="Third slide"
-                  />
-
-                  <Carousel.Caption className={`rounded-3 ${stylesSection.CarouselCaption}`}>
-                    <Title classes='' title='Resiliência' subtitle='Entender como superar as adversidades e, muitas vezes, recomeçar, demonstra maturidade e força' />
-                  </Carousel.Caption>
-                </Carousel.Item>
-              </Carousel>
+              <SectionBox classes="py-2 d-sm-flex align-items-center justify-content-around">
+                <Picture
+                  classes={`${stylePicture.picturesGroup} `}
+                  widthSM="768"
+                  widthLG="769"
+                  alt="Logomarca"
+                  src={lider}
+                  srcSetLG={lider}
+                  srcSetSM={lider}
+                />
+                <Picture
+                  classes={stylePicture.picturesGroup}
+                  widthSM="768"
+                  widthLG="769"
+                  alt="Logomarca"
+                  src={profissional}
+                  srcSetLG={profissional}
+                  srcSetSM={profissional}
+                />
+                <Picture
+                  classes={`${stylePicture.picturesGroup}`}
+                  widthSM="768"
+                  widthLG="769"
+                  alt="Logomarca"
+                  src={teamwork}
+                  srcSetLG={teamwork}
+                  srcSetSM={teamwork}
+                />
+              </SectionBox>
+              <SectionBox classes="py-2 d-sm-flex align-items-center justify-content-around">
+              <Picture
+                classes={`${stylePicture.picturesGroup} `}
+                widthSM="768"
+                widthLG="769"
+                alt="Logomarca"
+                src={weld}
+                srcSetLG={weld}
+                srcSetSM={weld}
+              />
+              <Picture
+                classes={stylePicture.picturesGroup}
+                widthSM="768"
+                widthLG="769"
+                alt="Logomarca"
+                src={mig}
+                srcSetLG={mig}
+                srcSetSM={mig}
+              />
+              <Picture
+                classes={`${stylePicture.picturesGroup}`}
+                widthSM="768"
+                widthLG="769"
+                alt="Logomarca"
+                src={pipelineWelder}
+                srcSetLG={pipelineWelder}
+                srcSetSM={pipelineWelder}
+              />
+            </SectionBox>
             </Section>
-
           </Section>
-          <Section>
+
+          <Section id='softskill'>
             <Title
               classes={styles.Title_Section}
-              title='Soft skills'
+              title='Soft Skills'
               subtitle='Reconhecer e ampliar essas capacidades é tão importante quanto ter uma formação 
                     específica na área de atuação.'
             />
             <SectionBox
-              classes={`${stylesSection.justifyText} px-3`}
+              classes={`${stylesSection.justifyText} px-sm-3`}
               text='Com o avanço das transformações no mercado e nas relações de trabalho, cada vez mais empresas estão percebendo 
                     que precisam de colaboradores com habilidades que vão muito além da técnica. Soft skills são competências relacionadas
                     ao comportamento do indivíduo, muito mais atreladas à personalidade e às experiências, do que à formação profissional.'
             >
-              <ul className='mt-5 list'>
-                <li className='text-start mb-3'>Cordialidade e simpatia no trato com as pessoas</li>
-                <li className='text-start mb-3'>Capacidade de planejamento e organização para o cumprimento de prazos</li>
-                <li className='text-start mb-3'>Zelo pela higiene e organização do local de trabalho</li>
-                <li className='text-start mb-3'>Dinamismo para execução demúltiplas tarefas</li>
-                <li className='text-start mb-3'>Bom relacionamento interpessoal para trabalho em equipe</li>
-                <li className='text-start mb-3'>Capacidade de liderança e tomada de decisões assertivas</li>
-                <li className='text-start mb-3'>Soldagem estrutural</li>
-              </ul>
+              <ListGroup>
+                <ListItem classes='mb-3' item='Cordialidade e simpatia no trato com as pessoas' />
+                <ListItem classes='mb-3' item='Capacidade de planejamento e organização para o cumprimento de prazos' />
+                <ListItem classes='mb-3' item='Zelo pela higiene e organização do local de trabalho' />
+                <ListItem classes='mb-3' item='Dinamismo para execução de múltiplas tarefas' />
+                <ListItem classes='mb-3' item='Bom relacionamento interpessoal para trabalho em equipe' />
+                <ListItem classes='mb-3' item='Capacidade de liderança e tomada de decisões assertivas' />
+              </ListGroup>
             </SectionBox>
           </Section>
 
-          <Section>
+          <Section id='hardskill'>
             <Title
               classes={styles.Title_Section}
-              title=''
+              title='Hard Skills'
               subtitle='As hard skills estão relacionadas ao que desejamos aprender ao escolher uma graduação, por exemplo.'
             />
             <SectionBox
-              classes={`${stylesSection.justifyText} px-3`}
+              classes={`${stylesSection.justifyText} px-sm-3`}
               text='Ao se tratar de hard skills, estamos falando das competências técnicas, ou seja, adquiridas no ensino superior, 
                     pós-graduação, cursos técnicos, cursos livres, leituras e de outras maneiras. São as habilidades ligadas ao conhecimento 
                     adquirido e utilizadas para realizar a atividade profissional. Desse modo, as empresas podem comprovar que os candidatos 
                     têm essas competências com certificados, diplomas, etc.'
             >
-              <ul className='mt-5 list'>
-                <li className='text-start mb-3'>Soldagem de tubulações</li>
-                <li className='text-start mb-3'>Interpretação de projetos e desenhos técnicos</li>
-                <li className='text-start mb-3'>Inspeção e controle de qualidade</li>
-                <li className='text-start mb-3'>Solda MIG, TIG e arco elétrico</li>
-                <li className='text-start mb-3'>Metalurgia</li>
-                <li className='text-start mb-3'>Soldagem estrutural</li>
-              </ul>
+              <ListGroup>
+                <ListItem classes='mb-3' item='Soldagem de tubulações' />
+                <ListItem classes='mb-3' item='Interpretação de projetos e desenhos técnicos' />
+                <ListItem classes='mb-3' item='Inspeção e controle de qualidade' />
+                <ListItem classes='mb-3' item='Solda MIG, TIG e arco elétrico' />
+                <ListItem classes='mb-3' item='Metalurgia' />
+                <ListItem classes='mb-3' item='Soldagem estrutural' />
+              </ListGroup>
             </SectionBox>
           </Section>
         </Container>

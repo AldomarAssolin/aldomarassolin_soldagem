@@ -1,0 +1,16 @@
+
+.picturesGroup img{
+    width: 100%;
+    max-width: 280px !important;
+    height: 160px;
+    margin: 1em;
+
+    border-radius: 5px;
+    background-color: rgb(197, 195, 195);
+}
+
+@media screen and (max-width: 575px){
+    .picturesGroup img{
+        margin: 0;
+    }
+}

@@ -6,7 +6,7 @@
 }
 
 .effectSpan{
-    width: 100%;
+    width: 55px;
     height: 5px;
     background-color: var(--clr-primary);
     margin-right: .5em;

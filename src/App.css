@@ -23,8 +23,8 @@ h1,h3{
   font: var(--fnt-subtitle);
 }
 
-.justify{
-  text-align: justify;
+.bg-grey{
+  background-color: #e2e2e2;
 }
 
 .App {
@@ -180,12 +180,6 @@ footer{
   cursor: pointer;
 }
 
-.list{
-  list-style-position: inside;
-  text-indent: 0;
-}
-
-
 /* MEDIA QUERY */
 
 @media screen and (max-width:768px){
@@ -198,6 +192,9 @@ footer{
 }
 
 @media screen and (max-width:450px){
+  html{
+    font-size: .85em;
+  }
   .App-logo{
     margin: 3em 0;
   }

@@ -1,11 +1,14 @@
 import React from 'react'
 
-const Section_Box = ({titles,text, children, classes}) => {
+const Section_Box = ({ titles, text, children, classes }) => {
+  
   return (
     <div className={classes}>
-        {titles}
-        <p>{text}</p>
-        {children}
+      {titles}
+
+      {text ? <p>{text}</p> : ''}
+
+      {children}
     </div>
   )
 }
