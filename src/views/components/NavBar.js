@@ -6,15 +6,45 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
-// import About from '../pages/About'
-// import Contact from '../pages/Contact'
-// import Experience from '../pages/Experience'
-// import Home from '../pages/Home'
 import { Logo } from './Logo';
+import { useState } from 'react';
 
 
 const NavBar = () => {
+  const routePath = useLocation();
+  
+  const activelink = () => {
+    console.log(routePath.pathname)
+    switch (routePath.pathname) {
+      case '/':
+        const home = document.querySelector('.home')
+        home.classList.toggle('active')
+        break;
+      case '/About':
+        const about = document.querySelector('.about')
+        about.classList.toggle('active')
+        break;
+      case '/Experience':
+        const experience = document.querySelector('.experience')
+        experience.classList.toggle('active')
+        break;
+      case '/Contact':
+          const contact = document.querySelector('.contact')
+          contact.classList.toggle('active')
+          break;
+    
+      default:
+        break;
+    }
+  }
+
+  useEffect(() => {
+    activelink()
+  }, [routePath]);
+
   return (
     <>
       {['sm'].map((expand) => (
@@ -36,14 +66,14 @@ const NavBar = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end align-items-center flex-grow-1 pe-3">
-                  <Nav.Link href="/" className='links'>Home</Nav.Link>
-                  <Nav.Link href="/About" className='links'>Sobre</Nav.Link>
-                  <Nav.Link href="/Experience" className='links'>Experiências</Nav.Link>
-                  <Nav.Link href="/Contact" className='links'>Contatos</Nav.Link>
+                  <Nav.Link href="/" className='home links'>Home</Nav.Link>
+                  <Nav.Link href="/About" className='about links'>Sobre</Nav.Link>
+                  <Nav.Link href="/Experience" className='experience links'>Experiências</Nav.Link>
+                  <Nav.Link href="/Contact" className='contact links'>Contatos</Nav.Link>
                   <NavDropdown
                     title="Processos"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
-                    className=''
+                    className='dropdown'
                   >
                     <NavDropdown.Item href="#action3" className='links'>Action</NavDropdown.Item>
                     <NavDropdown.Item href="#action4" className='links'>

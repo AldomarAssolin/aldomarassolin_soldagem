@@ -1,8 +1,8 @@
 import React from 'react'
 
-const ListItem = ({classes, item}) => {
+const ListItem = ({ classes, icons, item }) => {
   return (
-    <li className={classes}>{item}</li>
+    <li className={classes}><i className={`pi pi-${icons}`}></i> {item}</li>
   )
 }
 

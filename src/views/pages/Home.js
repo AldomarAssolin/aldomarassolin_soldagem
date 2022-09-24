@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Button, Carousel, Col, Container, Row } from 'react-bootstrap'
+import { Button, Card, Carousel, Col, Container, Row } from 'react-bootstrap'
+import 'primeicons/primeicons.css';
 
 //Components
 import GoToTop from '../components/GoToTop'
@@ -17,22 +18,24 @@ import ListItem from '../components/ListItem'
 //Styles
 import styles from '../components/Title_Section.module.css'
 import stylesSection from '../components/Section.module.css'
-import stylePicture from '../components/Pictures.module.css'
+//import stylePicture from '../components/Pictures.module.css'
 
 //Images
 import IMGBanner250 from '../../public/images/img-home/Logo_Brancox250.png'
 import IMGBanner500 from '../../public/images/img-home/Logo_Brancox500.png'
 import AgrimecLogo from '../../public/images/experiences/agrimec-implementos-agricolas-logo.jpg'
+import FrigSilva from '../../public/images/experiences/frigorifico-silva128..jpg'
 import CofelmaLogo from '../../public/images/experiences/logo-cofelma.png'
 import ImgWelder1 from '../../public/images/carousel/solda-robo.jpg'
 import ImgWelder2 from '../../public/images/carousel/trabalhador-soldagem.jpg'
 import ImgWelder3 from '../../public/images/carousel/badWelde2.jpg'
-import lider from '../../public/images/softskills/liderance-250x155.png'
-import profissional from '../../public/images/softskills/profissionalism-250x155.png'
-import teamwork from '../../public/images/softskills/teamwork-250x155.png'
+import lider from '../../public/images/softskills/png/001-lideranca.png'
+import profissional from '../../public/images/softskills/png/002-empregado.png'
+import teamwork from '../../public/images/softskills/png/004-socios.png'
 import weld from '../../public/images/hardskills/solda-teste-250x155.jpg'
 import mig from '../../public/images/hardskills/solda-mig-250x155.jpg'
 import pipelineWelder from '../../public/images/hardskills/soldagem-de-tubulacao-250x155.jpg'
+import ReadMore from '../components/ReadMore';
 
 const Home = () => {
 
@@ -109,7 +112,7 @@ const Home = () => {
                           pulsada."
                 classes={`${stylesSection.Section_Box_Left} ${stylesSection.justify} px-3`}
               >
-                <Link to='/About' className='links'>Saiba Mais...</Link>
+              <ReadMore linkClass='links' to='/About' textLink='Saiba mais...'/>
               </SectionBox>
             </Col>
             <Col sm={6}>
@@ -167,40 +170,36 @@ const Home = () => {
             className='text-start'
             cardImg={AgrimecLogo}
             cardTitle='Agrimec Agro Industrial e Mecânica LTDA'
-            cardSubtitle='Montador/Soldador'
-            cardText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni quod velit, facilis necessitatibus 
-                            dolores saepe aperiam sint, consequatur atque laudantium blanditiis ullam, consectetur nemo et minima 
-                            illum quia cum."
-            cardDataIn='01/07/2008'
-            cardDataOut='07/10/2010'
+            cardSubtitle='Soldador'
+            cardText="Soldagem de estruturas gerais, implementos agrícolas."
+            cardDataIn='22/02/2022'
+            cardDataOut='22/05/2021'
           />
           <CardsExperinces
             className='text-start'
             cardImg={CofelmaLogo}
-            cardTitle='Agrimec Agro Industrial e Mecânica LTDA'
-            cardSubtitle='Montador/Soldador'
-            cardText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni quod velit, facilis necessitatibus 
-                            dolores saepe aperiam sint, consequatur atque laudantium blanditiis ullam, consectetur nemo et minima 
-                            illum quia cum."
-            cardDataIn='01/07/2008'
-            cardDataOut='07/10/2010'
+            cardTitle='Metalurgica Cofelma LTDA'
+            cardSubtitle='Soldador'
+            cardText="Montagem e soldagem de roscas transportadoras."
+            cardDataIn='07/05/2020'
+            cardDataOut='04/08/2020'
           />
           <CardsExperinces
             className='text-start'
-            cardImg={AgrimecLogo}
-            cardTitle='Agrimec Agro Industrial e Mecânica LTDA'
-            cardSubtitle='Montador/Soldador'
-            cardText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni quod velit, facilis necessitatibus 
-                            dolores saepe aperiam sint, consequatur atque laudantium blanditiis ullam, consectetur nemo et minima 
-                            illum quia cum."
-            cardDataIn='01/07/2008'
-            cardDataOut='07/10/2010'
+            cardImg={FrigSilva}
+            cardTitle='Frigorífico Silva Industria e Comércio LTDA'
+            cardSubtitle='Soldador'
+            cardText="Soldagem e manutenção de máquinas, equipamentos , estruturas e dependências frigoríficas."
+            cardDataIn='11/11/2019'
+            cardDataOut='08/02/2020'
           />
-          <div className='text-center py-3 w-100'>
-
-            <Link to='/Experience' className='links'>Saiba Mais...</Link>
-
-          </div>
+          {/* button link to read more */}
+          <ReadMore 
+            divClass='my-3'
+            linkClass='links'
+            to='/Experience' 
+            textLink='Saiba mais...'
+          />
         </Section>
       </Section>
 
@@ -214,42 +213,90 @@ const Home = () => {
                       características que estão além da experiência profissional e da formação acadêmica do candidato.'
             />
             <Section>
-              <SectionBox classes="py-2 d-sm-flex flex-wrap flex-s align-items-center justify-content-center">
-                <div className=' w-100 d-flex flex-wrap align-items-center justify-content-around mb-3'>
-                  <img
-                    className='mb-3'
-                    alt="Logomarca"
-                    src={lider}
-                  />
-                  <img
-                    className='mb-3'
-                    alt="Logomarca"
-                    src={profissional}
-                  />
-                  <img
-                    className='mb-3'
-                    alt="Logomarca"
-                    src={teamwork}
-                  />
-                </div>
-                <div className=' w-100 d-flex flex-wrap align-items-center justify-content-around'>
-                  <img
-                    className='mb-3'
-                    alt="Logomarca"
-                    src={weld}
-                  />
-                  <img
-                    className='mb-3'
-                    alt="Logomarca"
-                    src={mig}
-                  />
-                  <img
-                    className='mb-3'
-                    alt="Logomarca"
-                    src={pipelineWelder}
-                  />
-                </div>
+              <SectionBox classes="py-2 d-sm-flex flex-wrap flex-s align-items-center justify-content-center justify-content-sm-around">
+                  <Card style={{ width: '18rem' }} className='mb-3 m-auto'>
+                    <Card.Img variant="top" src={lider} className='p-2' />
+                    <Card.Body>
+                      <Card.Title>Liderança</Card.Title>
+                        <Card.Text>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Gerenciar Projetos'/>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Resolver Conflitos'/>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Delegar Tarefas'/>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Dar Feedback'/>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Supervisionar'/>
+                        </Card.Text>
+                    </Card.Body>
+                  </Card>
+                  <Card style={{ width: '18rem' }} className='mb-3 m-auto'>
+                    <Card.Img variant="top" src={profissional} className='p-2'/>
+                    <Card.Body>
+                      <Card.Title>Profissionalismo</Card.Title>
+                        <Card.Text>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Competência'/>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Honestidade'/>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Autorregulação'/>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Buscar Soluções'/>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Inteligência Emocional'/>
+                        </Card.Text>
+                    </Card.Body>
+                  </Card>
+                  <Card style={{ width: '18rem' }} className='mb-3 m-auto'>
+                    <Card.Img variant="top" src={teamwork} className='p-2'/>
+                    <Card.Body>
+                      <Card.Title>Trabalho em Equipe</Card.Title>
+                        <Card.Text>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Aceitar Feedback'/>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Colaborar'/>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Aceitart a Divercidade'/>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Ter empatia'/>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Respeitar opiniões'/>
+                        </Card.Text>
+                    </Card.Body>
+                  </Card>
+                  <Card style={{ width: '18rem' }} className='mb-3 m-auto'>
+                    <Card.Img variant="top" src={weld} className='p-2'/>
+                    <Card.Body>
+                      <Card.Title>Qualidade e Inspeção</Card.Title>
+                        <Card.Text>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Inspeção Dimensional'/>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Medição dos Parâmetros'/>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Controle de Qualidade'/>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Padrão nos Processos'/>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Normais de Soldagem'/>
+                        </Card.Text>
+                    </Card.Body>
+                  </Card>
+                  <Card style={{ width: '18rem' }} className='mb-3 m-auto'>
+                    <Card.Img variant="top" src={mig} className='p-2'/>
+                    <Card.Body>
+                      <Card.Title>Processos de Soldagem</Card.Title>
+                        <Card.Text>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='GMAW ou MAG'/>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='FCAW (arame tubular)'/>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='GMAW-P (MAG - Pulsado)'/>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='SAW (Aco Submerso)'/>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='GTAW ou TIG'/>
+                        </Card.Text>
+                    </Card.Body>
+                  </Card>
+                  <Card style={{ width: '18rem' }} className='mb-3 m-auto'>
+                    <Card.Img variant="top" src={pipelineWelder} className='p-2'/>
+                    <Card.Body>
+                      <Card.Title>Técnico em Soldagem</Card.Title>
+                        <Card.Text>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Qualificação de Procedimento'/>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Acompanhamento do setor e soldadores'/>
+                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Qualificação e Treinamento para soldadores'/>
+                        </Card.Text>
+                    </Card.Body>
+                  </Card>
               </SectionBox>
+              <ReadMore 
+                divClass='my-3'
+                linkClass='links'
+                to='/about' 
+                textLink='Saiba mais...'
+              />
             </Section>
           </Section>
 

@@ -12,6 +12,7 @@ import styles from '../components/Title_Section.module.css'
 //Images
 import AgrimecLogo from '../../public/images/experiences/agrimec-implementos-agricolas-logo.jpg'
 import CofelmaLogo from '../../public/images/experiences/logo-cofelma.png'
+import FrigSilva from '../../public/images/experiences/frigorifico-silva128..jpg'
 
 const Experience = () => {
   return (
@@ -23,38 +24,32 @@ const Experience = () => {
           subtitle="Uma carreira de sucesso traz junto muitos desafios"  
         />
         <Section>
-          <CardsExperinces
+        <CardsExperinces
             className='text-start'
             cardImg={AgrimecLogo}
             cardTitle='Agrimec Agro Industrial e Mecânica LTDA'
-            cardSubtitle='Montador/Soldador'
-            cardText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni quod velit, facilis necessitatibus 
-                      dolores saepe aperiam sint, consequatur atque laudantium blanditiis ullam, consectetur nemo et minima 
-                      illum quia cum."
-            cardDataIn='01/07/2008'
-            cardDataOut='07/10/2010'
+            cardSubtitle='Soldador'
+            cardText="Soldagem de estruturas gerais, implementos agrícolas."
+            cardDataIn='22/02/2022'
+            cardDataOut='22/05/2021'
           />
           <CardsExperinces
             className='text-start'
             cardImg={CofelmaLogo}
-            cardTitle='Agrimec Agro Industrial e Mecânica LTDA'
-            cardSubtitle='Montador/Soldador'
-            cardText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni quod velit, facilis necessitatibus 
-                      dolores saepe aperiam sint, consequatur atque laudantium blanditiis ullam, consectetur nemo et minima 
-                      illum quia cum."
-            cardDataIn='01/07/2008'
-            cardDataOut='07/10/2010'
+            cardTitle='Metalurgica Cofelma LTDA'
+            cardSubtitle='Soldador'
+            cardText="Montagem e soldagem de roscas transportadoras."
+            cardDataIn='07/05/2020'
+            cardDataOut='04/08/2020'
           />
           <CardsExperinces
             className='text-start'
-            cardImg={AgrimecLogo}
-            cardTitle='Agrimec Agro Industrial e Mecânica LTDA'
-            cardSubtitle='Montador/Soldador'
-            cardText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni quod velit, facilis necessitatibus 
-                      dolores saepe aperiam sint, consequatur atque laudantium blanditiis ullam, consectetur nemo et minima 
-                      illum quia cum."
-            cardDataIn='01/07/2008'
-            cardDataOut='07/10/2010'
+            cardImg={FrigSilva}
+            cardTitle='Frigorífico Silva Industria e Comércio LTDA'
+            cardSubtitle='Soldador'
+            cardText="Soldagem e manutenção de máquinas, equipamentos , estruturas e dependências frigoríficas."
+            cardDataIn='11/11/2019'
+            cardDataOut='08/02/2020'
           />
         </Section>
       </Section>

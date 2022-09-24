@@ -11,7 +11,7 @@
   --fnt-text: normal 'Lato', sans-serif;
 
   --clr-hover1: #ee7511;
-  --clr-hover: #095c58;
+  --clr-hover: #72ddf0;
 }
 
 h2{
@@ -25,6 +25,10 @@ h1,h3{
 
 .bg-grey{
   background-color: #e2e2e2;
+}
+
+.listStyleCheck{
+  list-style-type: none;
 }
 
 .App {
@@ -91,13 +95,17 @@ h1,h3{
 }
 
 .links:hover{
-  color: var(--clr-hover) !important;
+  color: var(--clr-1) !important;
 }
 
 .nav-link {
   color: var(--clr-primary) !important;
   font: var(--fnt-text) !important;
   transition: .3s !important;
+}
+
+.active{
+  color: var(--clr-1) !important;
 }
 
 .btn_toggle{
