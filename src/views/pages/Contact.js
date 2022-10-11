@@ -36,7 +36,7 @@ const Contact = () => {
                 sizeIcon=''
                 title='Contato via Whatsapp'
                 description='Você pode me contactar via WhatsApp, apenas clique no botão.'
-                link='https://web.whatsapp.com/send?phone=5596186446?text=Olá%20Aldomar!'
+                link='https://web.whatsapp.com/send?phone=555596186446?text=Olá%20Aldomar!'
                 linkName='Whatsapp'
                 classBTN='btn btn-success'
                 classBody='text-light'
