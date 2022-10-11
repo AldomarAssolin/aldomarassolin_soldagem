@@ -13,7 +13,7 @@ import Whatsapp80 from '../../public/images/img-home/Whatsapp80.png'
 import Whatsapp250 from '../../public/images/img-home/Whatsappx250.png'
 import Linkedin from '../../public/images/img-home/Linkedin80.png'
 import Linkedin250 from '../../public/images/img-home/Linkedinx250.png'
-import Email from '../../public/images/img-home/Email.png'
+import Email from '../../public/images/img-home/Email80.png'
 import Email250 from '../../public/images/img-home/Email250.png'
 
 //styles
@@ -44,8 +44,8 @@ const Contact = () => {
                 classesBG={styles.bgMirage}
               >
                 <Picture
-                    widthSM="768"
-                    widthLG="769"
+                    widthSM="575"
+                    widthLG="576"
                     alt="Whatsapp"
                     src={Whatsapp250}
                     srcSetLG={Whatsapp250}
@@ -67,8 +67,8 @@ const Contact = () => {
                 classesBG={styles.bgGradientgrandeur}
               >
                 <Picture
-                    widthSM="768"
-                    widthLG="769"
+                    widthSM="575"
+                    widthLG="576"
                     alt="Whatsapp"
                     src={Linkedin250}
                     srcSetLG={Linkedin250}
@@ -90,8 +90,8 @@ const Contact = () => {
                 classesBG={styles.bgRoyal}
               >
                 <Picture
-                    widthSM="768"
-                    widthLG="769"
+                    widthSM="575"
+                    widthLG="576"
                     alt="Envelope"
                     src={Email250}
                     srcSetLG={Email250}

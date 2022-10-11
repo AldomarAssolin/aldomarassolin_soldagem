@@ -7,9 +7,9 @@ import styles from './ContactsCard.module.css'
 
 export const ContactsCard = ({children, classCard, classesBG, classheader, classBody, classFooter, classesIcon,icon,sizeIcon,title,description,link,linkName,classBTN}) => {
   return (
-    <Card className={`${classesBG} d-flex p-2 m-5`}>
+    <Card className={`${classesBG} p-2 m-5`}>
         <Row>
-            <Col ms={6}>
+            <Col sm={6}>
                 <div className={`${classCard} ${styles.contactControll}`}>
                     <div className={` ${classheader} ${styles.cardHeader}`}>
                         <i className={`pi pi-${icon} ${classesIcon}` } style={{'fontSize': `${sizeIcon}`}}></i>
@@ -23,7 +23,7 @@ export const ContactsCard = ({children, classCard, classesBG, classheader, class
                     </div>
                 </div>
             </Col>
-            <Col ms={6}>
+            <Col sm={6}>
                 <div className={`${styles.imageControll}`}>
                     {children}
                 </div>
