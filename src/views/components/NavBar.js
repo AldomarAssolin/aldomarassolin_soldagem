@@ -10,7 +10,6 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 import { Logo } from './Logo';
-import { useState } from 'react';
 
 
 const NavBar = () => {
@@ -43,7 +42,7 @@ const NavBar = () => {
 
   useEffect(() => {
     activelink()
-  }, [routePath]);
+  },);
 
   return (
     <>

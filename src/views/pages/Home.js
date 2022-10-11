@@ -36,9 +36,9 @@ import weld from '../../public/images/hardskills/solda-teste-250x155.jpg'
 import mig from '../../public/images/hardskills/solda-mig-250x155.jpg'
 import pipelineWelder from '../../public/images/hardskills/soldagem-de-tubulacao-250x155.jpg'
 import ReadMore from '../components/ReadMore';
+import GetDataCompanies from '../../public/getAPIData/GetAPIData';
 
 const Home = () => {
-
   return (
     <Container>
       <Section classes='banner'>
@@ -112,7 +112,7 @@ const Home = () => {
                           pulsada."
                 classes={`${stylesSection.Section_Box_Left} ${stylesSection.justify} px-3`}
               >
-              <ReadMore linkClass='links' to='/About' textLink='Saiba mais...'/>
+                <ReadMore linkClass='links' to='/About' textLink='Saiba mais...' />
               </SectionBox>
             </Col>
             <Col sm={6}>
@@ -166,6 +166,7 @@ const Home = () => {
           subtitle="Uma carreira de sucesso traz junto muitos desafios"
         />
         <Section>
+          <GetDataCompanies/>
           <CardsExperinces
             className='text-start'
             cardImg={AgrimecLogo}
@@ -194,10 +195,10 @@ const Home = () => {
             cardDataOut='08/02/2020'
           />
           {/* button link to read more */}
-          <ReadMore 
+          <ReadMore
             divClass='my-3'
             linkClass='links'
-            to='/Experience' 
+            to='/Experience'
             textLink='Saiba mais...'
           />
         </Section>
@@ -214,87 +215,87 @@ const Home = () => {
             />
             <Section>
               <SectionBox classes="py-2 d-sm-flex flex-wrap flex-s align-items-center justify-content-center justify-content-sm-around">
-                  <Card style={{ width: '18rem' }} className='mb-3 m-auto'>
-                    <Card.Img variant="top" src={lider} className='p-2' />
-                    <Card.Body>
-                      <Card.Title>Liderança</Card.Title>
-                        <Card.Text>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Gerenciar Projetos'/>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Resolver Conflitos'/>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Delegar Tarefas'/>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Dar Feedback'/>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Supervisionar'/>
-                        </Card.Text>
-                    </Card.Body>
-                  </Card>
-                  <Card style={{ width: '18rem' }} className='mb-3 m-auto'>
-                    <Card.Img variant="top" src={profissional} className='p-2'/>
-                    <Card.Body>
-                      <Card.Title>Profissionalismo</Card.Title>
-                        <Card.Text>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Competência'/>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Honestidade'/>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Autorregulação'/>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Buscar Soluções'/>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Inteligência Emocional'/>
-                        </Card.Text>
-                    </Card.Body>
-                  </Card>
-                  <Card style={{ width: '18rem' }} className='mb-3 m-auto'>
-                    <Card.Img variant="top" src={teamwork} className='p-2'/>
-                    <Card.Body>
-                      <Card.Title>Trabalho em Equipe</Card.Title>
-                        <Card.Text>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Aceitar Feedback'/>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Colaborar'/>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Aceitart a Divercidade'/>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Ter empatia'/>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Respeitar opiniões'/>
-                        </Card.Text>
-                    </Card.Body>
-                  </Card>
-                  <Card style={{ width: '18rem' }} className='mb-3 m-auto'>
-                    <Card.Img variant="top" src={weld} className='p-2'/>
-                    <Card.Body>
-                      <Card.Title>Qualidade e Inspeção</Card.Title>
-                        <Card.Text>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Inspeção Dimensional'/>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Medição dos Parâmetros'/>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Controle de Qualidade'/>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Padrão nos Processos'/>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Normais de Soldagem'/>
-                        </Card.Text>
-                    </Card.Body>
-                  </Card>
-                  <Card style={{ width: '18rem' }} className='mb-3 m-auto'>
-                    <Card.Img variant="top" src={mig} className='p-2'/>
-                    <Card.Body>
-                      <Card.Title>Processos de Soldagem</Card.Title>
-                        <Card.Text>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='GMAW ou MAG'/>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='FCAW (arame tubular)'/>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='GMAW-P (MAG - Pulsado)'/>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='SAW (Aco Submerso)'/>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='GTAW ou TIG'/>
-                        </Card.Text>
-                    </Card.Body>
-                  </Card>
-                  <Card style={{ width: '18rem' }} className='mb-3 m-auto'>
-                    <Card.Img variant="top" src={pipelineWelder} className='p-2'/>
-                    <Card.Body>
-                      <Card.Title>Técnico em Soldagem</Card.Title>
-                        <Card.Text>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Qualificação de Procedimento'/>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Acompanhamento do setor e soldadores'/>
-                          <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Qualificação e Treinamento para soldadores'/>
-                        </Card.Text>
-                    </Card.Body>
-                  </Card>
+                <Card style={{ width: '18rem' }} className='mb-3 m-auto'>
+                  <Card.Img variant="top" src={lider} className='p-2' />
+                  <Card.Body>
+                    <Card.Title>Liderança</Card.Title>
+                    <Card.Text>
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Gerenciar Projetos' />
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Resolver Conflitos' />
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Delegar Tarefas' />
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Dar Feedback' />
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Supervisionar' />
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                <Card style={{ width: '18rem' }} className='mb-3 m-auto'>
+                  <Card.Img variant="top" src={profissional} className='p-2' />
+                  <Card.Body>
+                    <Card.Title>Profissionalismo</Card.Title>
+                    <Card.Text>
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Competência' />
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Honestidade' />
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Autorregulação' />
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Buscar Soluções' />
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Inteligência Emocional' />
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                <Card style={{ width: '18rem' }} className='mb-3 m-auto'>
+                  <Card.Img variant="top" src={teamwork} className='p-2' />
+                  <Card.Body>
+                    <Card.Title>Trabalho em Equipe</Card.Title>
+                    <Card.Text>
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Aceitar Feedback' />
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Colaborar' />
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Aceitart a Divercidade' />
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Ter empatia' />
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Respeitar opiniões' />
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                <Card style={{ width: '18rem' }} className='mb-3 m-auto'>
+                  <Card.Img variant="top" src={weld} className='p-2' />
+                  <Card.Body>
+                    <Card.Title>Qualidade e Inspeção</Card.Title>
+                    <Card.Text>
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Inspeção Dimensional' />
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Medição dos Parâmetros' />
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Controle de Qualidade' />
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Padrão nos Processos' />
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Normais de Soldagem' />
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                <Card style={{ width: '18rem' }} className='mb-3 m-auto'>
+                  <Card.Img variant="top" src={mig} className='p-2' />
+                  <Card.Body>
+                    <Card.Title>Processos de Soldagem</Card.Title>
+                    <Card.Text>
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='GMAW ou MAG' />
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='FCAW (arame tubular)' />
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='GMAW-P (MAG - Pulsado)' />
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='SAW (Aco Submerso)' />
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='GTAW ou TIG' />
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                <Card style={{ width: '18rem' }} className='mb-3 m-auto'>
+                  <Card.Img variant="top" src={pipelineWelder} className='p-2' />
+                  <Card.Body>
+                    <Card.Title>Técnico em Soldagem</Card.Title>
+                    <Card.Text>
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Qualificação de Procedimento' />
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Acompanhamento do setor e soldadores' />
+                      <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Qualificação e Treinamento para soldadores' />
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
               </SectionBox>
-              <ReadMore 
+              <ReadMore
                 divClass='my-3'
                 linkClass='links'
-                to='/about' 
+                to='/about'
                 textLink='Saiba mais...'
               />
             </Section>
