@@ -1,17 +1,17 @@
 import React from 'react'
 
-import logo from '../../images/logos/logo192.png';
+import logo from '../../public/images/logos/logo.png';
 
-import curriculo from '../../pdf/curriculo_22.pdf'
+import curriculo from '../../public/pdf/curriculo_22.pdf'
 
-import Title from '../components/Title'
+import Title from '../components/Title_Section'
 
 const Single = () => {
   return (
     <>
-        <header className='App-header'>
+        <header className='App-header pt-4'>
             <div className="App-logo">
-                <img src={logo} alt="Logomarca" />
+                <img src={logo} alt="Logomarca" height="300px"/>
             </div>
             <div className="App-text">
                 <Title title='Aldomar Assolin' subtitle='Soldador'/>

@@ -9,7 +9,8 @@
 .Section_Box_Right{
     width: 100%;
     height: 100%;
-    padding: 3em 1em;
+    padding: 1rem 1rem;
+    margin: 5rem 0;
 }
 
 .justify{

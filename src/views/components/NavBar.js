@@ -4,7 +4,7 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+//import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -47,7 +47,7 @@ const NavBar = () => {
   return (
     <>
       {['sm'].map((expand) => (
-        <Navbar key={expand} expand={expand} className="mb-3">
+        <Navbar key={expand} expand={expand} className="mb-3" fixed="top" bg="dark">
           <Container>
             <Navbar.Brand href="/">
               <Logo/>
@@ -69,11 +69,10 @@ const NavBar = () => {
                   <Nav.Link href="/About" className='about links'>Sobre</Nav.Link>
                   <Nav.Link href="/Experience" className='experience links'>Experiências</Nav.Link>
                   <Nav.Link href="/Contact" className='contact links'>Contatos</Nav.Link>
-                  <NavDropdown
+                  {/* <NavDropdown
                     title="Processos"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
-                    className='dropdown'
-                  >
+                    className='dropdown'>
                     <NavDropdown.Item href="#action3" className='links'>Action</NavDropdown.Item>
                     <NavDropdown.Item href="#action4" className='links'>
                       Another action
@@ -83,7 +82,7 @@ const NavBar = () => {
                     <NavDropdown.Item href="#action6" className='links'>
                       Another action
                     </NavDropdown.Item>
-                  </NavDropdown>
+                  </NavDropdown> */}
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

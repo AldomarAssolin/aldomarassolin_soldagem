@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { Button, Card, Carousel, Col, Container, Row } from 'react-bootstrap'
+
+import { Card, Carousel, Col, Container, Row } from 'react-bootstrap'
 import 'primeicons/primeicons.css';
 
 //Components
@@ -10,8 +10,6 @@ import SectionBox from '../components/Section_Box'
 import Section from '../components/Section'
 import TitleEffect from '../components/Title_Effect'
 import CardsExperinces from '../components/Cards_Experinces'
-import curriculo from '../../public/pdf/curriculo_22.pdf'
-import Picture from '../components/Picture'
 import ListGroup from '../components/ListGroup'
 import ListItem from '../components/ListItem'
 
@@ -21,8 +19,6 @@ import stylesSection from '../components/Section.module.css'
 //import stylePicture from '../components/Pictures.module.css'
 
 //Images
-import IMGBanner250 from '../../public/images/img-home/Logo_Brancox250.png'
-import IMGBanner500 from '../../public/images/img-home/Logo_Brancox500.png'
 import AgrimecLogo from '../../public/images/experiences/agrimec-implementos-agricolas-logo.jpg'
 import FrigSilva from '../../public/images/experiences/frigorifico-silva128..jpg'
 import CofelmaLogo from '../../public/images/experiences/logo-cofelma.png'
@@ -37,53 +33,14 @@ import mig from '../../public/images/hardskills/solda-mig-250x155.jpg'
 import pipelineWelder from '../../public/images/hardskills/soldagem-de-tubulacao-250x155.jpg'
 import ReadMore from '../components/ReadMore';
 import GetDataCompanies from '../../public/getAPIData/GetAPIData';
+import Banner from '../Sections/Banner';
 
 const Home = () => {
   return (
+   <>
+    <Banner/>
+
     <Container>
-      <Section classes='banner'>
-        <Row className='d-flex align-items-center'>
-          <Col sm={6}>
-            <SectionBox
-              titles={
-                <Title
-                  classes={`${styles.Title_box} mb-sm-2`}
-                  title="Aldomar Assolin"
-                  subtitle="Soldador"
-                  effect={<TitleEffect />}
-                />
-              }
-              text="O Crescimento profissional é um dos meus objetivos dentro de uma empresa, exercendo a função à mim destinada, 
-                  aplicando as normas de segurança e zelando pela saúde, integridade e segurança de todos os trabalhadores, 
-                  bem como o crescimento em equipe."
-              classes={`${stylesSection.Section_Box_Left} ${stylesSection.justify} d-flex flex-column align-items-start justify-content-center`}
-            >
-              <div className='text-end w-100'>
-                <Button variant=''>
-                  <a className="links" href={curriculo} target="_blank" rel="noreferrer">Currículo em PDF</a>
-                </Button>
-                <Button variant=''>
-                  <Link to='/About' className='links'>Saiba Mais...</Link>
-                </Button>
-              </div>
-            </SectionBox>
-          </Col>
-          <Col sm={6}>
-            <SectionBox classes={`${stylesSection.Section_Box_Right} d-flex align-items-center justify-content-center`}>
-              <Picture
-                widthSM="768"
-                widthLG="769"
-                alt="Logomarca"
-                src={IMGBanner500}
-                srcSetLG={IMGBanner500}
-                srcSetSM={IMGBanner250}
-
-              />
-            </SectionBox>
-          </Col>
-        </Row>
-      </Section>
-
       <Section className='about'>
         <Title classes={styles.Title_Section} title="Quem Sou?" subtitle="Soldador, Técnico em Soldagem, Operador de Soldagem" />
         <SectionBox
@@ -352,6 +309,7 @@ const Home = () => {
       </Section>
       <GoToTop />
     </Container>
+    </> 
   )
 }
 

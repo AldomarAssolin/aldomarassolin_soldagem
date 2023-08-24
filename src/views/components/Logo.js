@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ImgLogo from '../../public/images/logos/android-icon-48x48.png'
+import ImgLogo from '../../public/images/logos/logo192.png'
 
 export const Logo = (props) => {
   return (
