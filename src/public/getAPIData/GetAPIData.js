@@ -22,7 +22,7 @@ class GetDataCompanies extends Component{
 
     render(){
         return(
-            <p>OLa Mundo{this.state.apiResponse}</p>
+            <p>{this.state.apiResponse}</p>
         )
     }
 }

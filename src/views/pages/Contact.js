@@ -23,7 +23,7 @@ const Contact = () => {
   
 
   return (
-    <Container>
+    <Container className='py-5'>
           <TitleSection
             classes='m-5'
             title='Meus Contatos'

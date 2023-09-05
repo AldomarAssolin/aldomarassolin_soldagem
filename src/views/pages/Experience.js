@@ -16,7 +16,7 @@ import FrigSilva from '../../public/images/experiences/frigorifico-silva128..jpg
 
 const Experience = () => {
   return (
-    <Container>
+    <Container className='py-5'>
       <Section id="experiences">
         <Title 
           classes={styles.Title_Section} 

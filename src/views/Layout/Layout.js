@@ -10,11 +10,11 @@ export const Layout = () => {
         <>
             <BrowserRouter>
             
-                {/* <Header />*/}
+                <Header />
                     <main style={{minHeight:'80vh'}}>
                         <Routers />
                     </main>
-                {/*</><Footer/> */}
+                <Footer/>
             </BrowserRouter>
         </>
     )

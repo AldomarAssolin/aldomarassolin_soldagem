@@ -17,7 +17,7 @@ import ImgWelder3 from '../../public/images/carousel/badWelde2.jpg'
 
 const About = () => {
   return (
-    <Container>
+    <Container className='py-5'>
 
         <Section className='about'>
             <Title classes={styles.Title_Section} title="Quem Sou?" subtitle="Soldador, Técnico em Soldagem, Operador de Soldagem"/>

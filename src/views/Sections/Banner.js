@@ -11,10 +11,6 @@ import TitleEffect from "../components/Title_Effect";
 import styles from '../components/Title_Section.module.css'
 import stylesSection from '../components/Section.module.css'
 import { Link } from "react-router-dom";
-import Picture from "../components/Picture";
-
-import IMGBanner250 from '../../public/images/logos/logo_transp-250.png'
-import IMGBanner500 from '../../public/images/logos/logo_transp-500.png'
 
 import curriculo from '../../public/pdf/curriculo_22.pdf'
 

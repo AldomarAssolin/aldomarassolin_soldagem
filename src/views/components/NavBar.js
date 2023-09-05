@@ -16,7 +16,7 @@ const NavBar = () => {
   const routePath = useLocation();
   
   const activelink = () => {
-    console.log(routePath.pathname)
+    
     switch (routePath.pathname) {
       case '/':
         const home = document.querySelector('.home')
@@ -40,6 +40,7 @@ const NavBar = () => {
     }
   }
 
+
   useEffect(() => {
     activelink()
   },);
@@ -47,7 +48,7 @@ const NavBar = () => {
   return (
     <>
       {['sm'].map((expand) => (
-        <Navbar key={expand} expand={expand} className="mb-3" fixed="top" bg="dark">
+        <Navbar key={expand} expand={expand} className="position-absolute w-100 navBar" >
           <Container>
             <Navbar.Brand href="/">
               <Logo/>
