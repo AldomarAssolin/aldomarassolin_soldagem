@@ -286,7 +286,7 @@ const Home = () => {
             <Title
               classes={styles.Title_Section}
               title='Hard Skills'
-              subtitle='As hard skills estão relacionadas ao que desejamos aprender ao escolher uma graduação, por exemplo.'
+              subtitle='As hard skills estão relacionadas ao que desejamos aprender ao escolher uma graduação.'
             />
             <SectionBox
               classes={`${stylesSection.justifyText} px-sm-3`}
