@@ -35,7 +35,7 @@ const Banner = () => {
                 text="O Crescimento profissional é um dos meus objetivos dentro de uma empresa, exercendo a função à mim destinada, 
                     aplicando as normas de segurança e zelando pela saúde, integridade e segurança de todos os trabalhadores, 
                     bem como o crescimento em equipe."
-                classes={`${stylesSection.Section_Box_Left} ${stylesSection.justify} ${Banner_style.banner_box} text-light d-flex flex-column align-items-start justify-content-center`}
+                classes={`${stylesSection.Section_Box_Left} ${stylesSection.justify} ${Banner_style.banner_box} px-3 text-light d-flex flex-column align-items-start justify-content-center`}
                 >
                 <div className='text-end w-100'>
                     <Button variant=''>

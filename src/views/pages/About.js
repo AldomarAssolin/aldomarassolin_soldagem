@@ -14,6 +14,7 @@ import TitleEffect from '../components/Title_Effect'
 import ImgWelder1 from '../../public/images/carousel/solda-robo.jpg'
 import ImgWelder2 from '../../public/images/carousel/trabalhador-soldagem.jpg'
 import ImgWelder3 from '../../public/images/carousel/badWelde2.jpg'
+import ListItem from '../components/ListItem'
 
 const About = () => {
   return (
@@ -90,6 +91,32 @@ const About = () => {
                     </Col>
                   </Row>
             </Section>
+            
+            <Title classes={styles.Title_Section} title="Responsabilidades"/>
+            
+            <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Realizar operações de soldagem de acordo com procedimentos e padrões de soldagem reconhecidos;' />
+            <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Auxiliar no layout, montagem, instalação de equipamentos da planta;' />
+            <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Auxiliar no manuseio de materiais conforme necessário;' />
+            <ListItem classes={`listStyleCheck text-start`} icons='check-square' item='Realizar inspeções de soldas e trabalhos de fabricação.' />
+            
+            <Title classes={styles.Title_Section} title="SERVIÇOS"/>
+            
+            <ListItem classes={`listStyleCheck text-start`} icons='check-square'
+             item='Coordenar e desenvolver equipes de trabalho que atuam na produção, aplicando métodos e técnicas de gestão administrativa e de pessoas;' />
+            <ListItem classes={`listStyleCheck text-start`} icons='check-square' 
+             item='Aplicar normas técnicas de saúde e segurança no trabalho e de controle de qualidade na fabricação dos equipamentos e serviços da planta industrial;' />
+            <ListItem classes={`listStyleCheck text-start`} icons='check-square' 
+             item='Aplicar técnicas de ensaios destrutivos e não destrutivos, visando a melhoria do controle e da qualidade de produtos e serviços da planta industrial;' />
+            <ListItem classes={`listStyleCheck text-start`} icons='check-square' 
+             item='Aplicar normas técnicas e especificações de catálogos, manuais e procedimentos emprocessos de soldagem, na fabricação de máquinas e equipamentos e na manutenção industrial;' />
+            <ListItem classes={`listStyleCheck text-start`} icons='check-square' 
+             item='Avaliar as características e propriedades dos metais base, consumíveis e máquinas de solda, para a aplicação correlacionando-as com seus fundamentos físicos e químicos para aplicação na fabricação dos equipamentos e serviços da planta industrial e no controle de qualidade;' />
+            <ListItem classes={`listStyleCheck text-start`} icons='check-square' 
+             item='Coordenar atividades de utilização e conservação de energia, propondo a racionalização de uso e de fontes alternativas;' />
+            <ListItem classes={`listStyleCheck text-start`} icons='check-square' 
+             item='Projetar melhorias nos sistemas convencionais de processo de soldagem, propondo incorporar novas tecnologias;' />
+            <ListItem classes={`listStyleCheck text-start`} icons='check-square' 
+             item='Qualificar soldadores e operadores de soldagem, visando a padronização no desenvolvimento da soldagem, com treinamentos e aplicação de boas práticas nas atividades relacionadas;' />
         </Section>
 
         <GoToTop/>

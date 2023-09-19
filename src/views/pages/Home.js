@@ -262,8 +262,7 @@ const Home = () => {
             <Title
               classes={styles.Title_Section}
               title='Soft Skills'
-              subtitle='Reconhecer e ampliar essas capacidades é tão importante quanto ter uma formação 
-                    específica na área de atuação.'
+              subtitle='Reconhecer e ampliar essas capacidades é tão importante quanto ter uma formação específica na área de atuação.'
             />
             <SectionBox
               classes={`${stylesSection.justifyText} px-sm-3`}
@@ -299,7 +298,7 @@ const Home = () => {
                 <ListItem classes='mb-3' item='Soldagem de tubulações' />
                 <ListItem classes='mb-3' item='Interpretação de projetos e desenhos técnicos' />
                 <ListItem classes='mb-3' item='Inspeção e controle de qualidade' />
-                <ListItem classes='mb-3' item='Solda MIG, TIG e arco elétrico' />
+                <ListItem classes='mb-3' item='Solda MIG/MAG, TIG e arco elétrico' />
                 <ListItem classes='mb-3' item='Metalurgia' />
                 <ListItem classes='mb-3' item='Soldagem estrutural' />
               </ListGroup>
