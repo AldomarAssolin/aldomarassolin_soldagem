@@ -20,7 +20,14 @@ h2{
 }
 
 h1,h3{
+  color: var(--clr-secondary);
   font: var(--fnt-subtitle);
+}
+
+.btn{
+  color: var(--clr-secondary);
+  background-color: var(--clr-primary);
+  border: none;
 }
 
 .bg-grey{
@@ -89,7 +96,7 @@ h1,h3{
 
 .links{
   text-decoration: none !important;
-  color: var(--clr-primary) !important;
+  color: var(--clr-secondary) !important;
   font: var(--fnt-text) !important;
   transition: .3s !important;
 }
@@ -115,13 +122,13 @@ h1,h3{
   background-color: var(--clr-primary);
 }
 
-.navBar{
-  background-color: rgba(0, 0, 0, .85);
-}
+/* .navBar{
+  background-color: rgba(0, 0, 0, .25);
+} */
 
 /* HEADER */
 header{
-  background-color: #000;
+  background-color: rgba(0, 0, 0, .55);
 }
 
 /* FOOTER */

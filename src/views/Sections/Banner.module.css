@@ -1,12 +1,20 @@
 
 
 .banner{
-    background: url('../../public/images/bg/bg-1280x650.png') no-repeat fixed center;
+    height: 95vh;
+    background: url('../../public/images/bg/trabalhador-soldagem.jpg') no-repeat fixed center;
     background-size: 100% 100%;
 }
 
 .banner_box{
-    background: rgba(0, 0, 0, .95);
+    min-height: 100%;
+    background: rgba(0, 0, 0, .75);
     border-radius: 1rem;
-    box-shadow: 15px 15px 15px #0e0d0d;
+    box-shadow: 0px 15px 15px #0e0d0d;
+    transition: .4s;
 }
+
+.banner_box:hover{
+    background: rgba(0, 0, 0, .35);
+}
+
