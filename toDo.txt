@@ -1,1 +1,32 @@
+
+Página Inicial do Portfólio
+
+Cabeçalho:
+    [V] Nome e Título: Seu nome e título como "Consultor em Soldagem e Automação Industrial".
+    [] Foto Profissional: Uma foto profissional sua.
+    [V] Slogan: Um slogan breve que destaque sua abordagem inovadora ou compromisso com a excelência.
+
+Seção de Introdução:
+    [] Descrição Pessoal: Uma breve introdução que destaque sua paixão pela soldagem e tecnologia, mesmo sem experiência prévia em consultoria.
+    [] Transição Profissional: Explique de forma sucinta sua transição de soldador e técnico para a consultoria em soldagem e automação industrial.
+    [] Foco na Aprendizagem Contínua: Mencione seu compromisso com a aprendizagem contínua e a busca de conhecimento nessa nova área.
+
+Seção de Habilidades:
+    [] Habilidades Técnicas: Liste suas habilidades técnicas, como conhecimento em soldagem, programação, automação industrial e qualquer outra habilidade relevante.
+    [] Aprendizado Atual: Destaque as tecnologias e conceitos que você está atualmente estudando para fortalecer sua capacidade de consultoria.
+
+Seção de Projetos Pessoais:
+    [] Projetos Relacionados: Destaque projetos pessoais ou estudos de caso relacionados à soldagem e automação industrial, mesmo que sejam pequenos. Forneça descrições breves e resultados alcançados.
+
+Seção de Contato:
+    [] Informações de Contato: Inclua informações de contato, como e-mail e telefone, para que as pessoas possam entrar em contato com você para consultoria.
+    [] Links para Redes Sociais: Inclua links para seu LinkedIn e outras redes sociais profissionais.
+
+Rodapé:
+    [] Copyright e Informações Legais: Informações de copyright e quaisquer outras informações legais relevantes.
+    [] Lembre-se de que, embora você não tenha experiência direta em consultoria, seu portfólio deve enfatizar seu compromisso com a aprendizagem e seu conhecimento técnico em soldagem e automação industrial. À medida que você adquire experiência e conclui projetos relacionados, pode atualizar seu portfólio para refletir essas conquistas.
+
+
 Criar Páginas para Processos e reativar NavLink Processos DropDown
+
+

@@ -5,6 +5,8 @@ import logo from '../../public/images/logos/logo.png';
 import curriculo from '../../public/pdf/curriculo_22.pdf'
 
 import Title from '../components/Title_Section'
+import { Button } from 'react-bootstrap';
+import { BsFillFilePdfFill } from "react-icons/bs";
 
 const Single = () => {
   return (
@@ -14,10 +16,17 @@ const Single = () => {
                 <img src={logo} alt="Logomarca" height="300px"/>
             </div>
             <div className="App-text">
-                <Title title='Aldomar Assolin' subtitle='Soldador'/>
-                <a className="btn App-link" href={curriculo} target="_blank" rel="noreferrer">
-                <i className="fa fa-download mx-2" /> Currículo em PDF
-                </a>
+                <Title
+                    classes='mb-4' 
+                    title='Aldomar Assolin' 
+                    subtitle='Consultor em Soldagem e Automação Industrial'
+                />
+                <Button variant='info' className="text-primary-emphasis">
+                    <BsFillFilePdfFill width="50"/>
+                    <a className="links mx-1" href={curriculo} target="_blank" rel="noreferrer">
+                        Currículo em PDF
+                    </a>
+                </Button>
             </div>
         </header>
         

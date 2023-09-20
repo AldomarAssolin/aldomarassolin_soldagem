@@ -33,33 +33,50 @@ const About = () => {
               No curso Técnico em Soldagem, cursado no Colégio Técnico Industrial de Santa Maria, RS, tive a portunidade de conhecer, estudar e entender 
               diversas dessas tecnologias, com os quais desenvolvo meu trabalho e compartilho esse conhecimento com demais colegas."
         /> */}
-        <Section classes={stylesSection.Section}>
+        <Section>
+            <Row>
+                <Col sm={12} className='p-0 mt-5'>
+                    
+                        <Title
+                            classes='text-start pt-5'
+                            title="Sobre Mim"
+                        />
+                        
+                </Col>
+          </Row>
           <Row>
-            <Col sm={6} className='p-0 mb-5'>
+            {/* <Col sm={6} className='p-0 mb-5'>
               <SectionBox
                 titles={
                   <Title
                     classes={`${styles.Title_box}`}
-                    title="Soldador"
-                    subtitle="De estruturas metálicas à tubulações"
+                    title="Técnico em Soldagem"
+                    subtitle="De estruturas gerais à tubulações"
                     effect={<TitleEffect />}
                   />
                 }
-                text="Soldagem nos processos GMAW, GMAWP, FCAW, SMAW, GTAW, SAW. Soldagem automatizada, fontes eletrônicas, com corrente 
-                          pulsada."
+                text="
+                    Planejamento, operação e coordenação da execução de atividades de soldagem em estruturas gerais e 
+                    tubulações industriais, de acordo com a programação da produção. Responsável ainda por executar a elaboração de projetos; selecionar processos de soldagem, 
+                    metais de base e consumíveis; execução de ensaios para garantir a qualidade dos produtos soldados e a automatização dos 
+                    processos.
+                    Soldagem nos processos GMAW, GMAWP, FCAW, SMAW, GTAW, SAW. Soldagem automatizada, fontes eletrônicas, 
+                    com corrente pulsada.
+                    "
                 classes={`${stylesSection.Section_Box_Left} ${stylesSection.justify} px-3`}
               >
                 <ReadMore linkClass='links' to='/About' textLink='Saiba mais...' />
               </SectionBox>
-            </Col>
-            <Col sm={6}>
+            </Col> */}
+            <Col sm={12} height='500'>
               <SectionBox
-                classes={stylesSection.Section_Box_Right}
+                classes={`${stylesSection.Section_Box_Right}`}
+                styles={'height:500px'}
               >
                 <Carousel>
                   <Carousel.Item>
                     <img
-                      className="d-block w-100  rounded-3"
+                      className="d-block w-100 rounded-3"
                       src={ImgWelder1}
                       alt="First slide"
                     />

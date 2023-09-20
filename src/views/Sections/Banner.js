@@ -31,17 +31,15 @@ const Banner = () => {
                             <Title
                             classes={`${styles.Title_box} mb-sm-2`}
                             title="Aldomar Assolin"
-                            subtitle="Técnico em Soldagem"
+                            subtitle="Consultor em Soldagem e Automação Industrial"
                             effect={<TitleEffect />}
                             />
                         }
-                        text="Planejamento, operação e coordenação da execução de atividades de soldagem em estruturas metálicas e 
-                            tubulações industriais, de acordo com a programação da produção. Responsável ainda por executar a elaboração de projetos; selecionar processos de soldagem, 
-                            metais de base e consumíveis; execução de ensaios para garantir a qualidade dos produtos soldados e a automatização dos 
-                            processos; calibrar equipamentos utilizando processos de soldagem e corte – manuais, semiautomáticos, 
-                            automáticos/robotizados –, como eletrodos revestidos, TIG (Tungsten Inert Gas, em ingles), MIG MAG (Metal Inert Gas e Metal 
-                            Active Gas, em inglês), oxigás, arco submerso, brasagem e plasma, além de aplicar procedimentos de soldagem e inspecionar 
-                            processos de fabricação."
+                        text="
+                            Com 15 anos de experiência como soldador e formação técnica sólida, sou Aldomar Assolin. Mergulhei na arte da soldagem, 
+                            agora trago minha paixão pela precisão e qualidade para o mundo da tecnologia. Conheça minha jornada de excelência em 
+                            soldagem e explore como minha expertise pode impulsionar a automação industrial. Seja bem-vindo à inovação.
+                        "
                         classes={`${stylesSection.Section_Box_Left} ${stylesSection.justify} px-3 text-light d-flex flex-column align-items-start justify-content-center`}
                     >
             
