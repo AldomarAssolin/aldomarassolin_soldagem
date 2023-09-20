@@ -35,7 +35,13 @@ const Banner = () => {
                             effect={<TitleEffect />}
                             />
                         }
-                        text=""
+                        text="Planejamento, operação e coordenação da execução de atividades de soldagem em estruturas metálicas e 
+                            tubulações industriais, de acordo com a programação da produção. Responsável ainda por executar a elaboração de projetos; selecionar processos de soldagem, 
+                            metais de base e consumíveis; execução de ensaios para garantir a qualidade dos produtos soldados e a automatização dos 
+                            processos; calibrar equipamentos utilizando processos de soldagem e corte – manuais, semiautomáticos, 
+                            automáticos/robotizados –, como eletrodos revestidos, TIG (Tungsten Inert Gas, em ingles), MIG MAG (Metal Inert Gas e Metal 
+                            Active Gas, em inglês), oxigás, arco submerso, brasagem e plasma, além de aplicar procedimentos de soldagem e inspecionar 
+                            processos de fabricação."
                         classes={`${stylesSection.Section_Box_Left} ${stylesSection.justify} px-3 text-light d-flex flex-column align-items-start justify-content-center`}
                     >
             
