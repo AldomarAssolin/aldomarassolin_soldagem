@@ -14,7 +14,7 @@ import ImgWelder3 from '../../public/images/banners/Noite.png'
 
 
 
-import curriculo from '../../public/pdf/curriculo_22.pdf'
+import curriculo from '../../public/pdf/Currículo_2023_AldomarAssolin.pdf'
 import { BsFillFilePdfFill, BsArrowBarRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 

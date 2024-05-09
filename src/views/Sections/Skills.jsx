@@ -238,9 +238,6 @@ const About = () => {
                     </Section_Box>
                 </Col>
             </Row>
-
-
-
         </Section>
 
     )

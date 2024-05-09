@@ -1,6 +1,6 @@
 {
   "name": "portifolio",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -19,7 +19,6 @@
     "mongoose": "^6.6.0",
     "primeicons": "^6.0.1",
     "react": "^18.1.0",
-    "react-alice-carousel": "^2.9.1",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.1.0",
     "react-icons": "^4.11.0",
@@ -54,5 +53,22 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
-  }
+  },
+  "description": "This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AldomarAssolin/aldomarassolin_soldagem.git"
+  },
+  "keywords": [
+    "analista",
+    "backend",
+    "banco",
+    "de",
+    "dados",
+    "apis",
+    "api"
+  ],
+  "author": "Aldomar Assolin",
+  "license": "ISC"
 }

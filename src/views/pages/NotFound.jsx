@@ -5,7 +5,7 @@ import { Button } from 'react-bootstrap';
 import { BsFillFilePdfFill } from "react-icons/bs";
 
 import logo from '../../public/images/logos/logo.png';
-import curriculo from '../../public/pdf/curriculo_22.pdf'
+import curriculo from '../../public/pdf/Currículo_2023_AldomarAssolin.pdf'
 import { NavLink } from "react-router-dom";
 
 const NotFound = () => {
