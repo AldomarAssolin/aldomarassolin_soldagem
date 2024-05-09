@@ -3,7 +3,7 @@ import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Button, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 import img1 from '../../public/images/hardskills/soldagem-de-tubulacao.jpg'
 import img2 from '../../public/images/hardskills/faltaFusaoT.jpg'
