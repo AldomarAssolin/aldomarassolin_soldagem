@@ -9,14 +9,18 @@ import SectionBox from "../components/SectionBox";
 import Title from "../components/Title_Section";
 
 import ImgWelder1 from '../../public/images/banners/manha.png'
+import ImgWelder1Mob from '../../public/images/banners/bannerMobileLogoBlue.png'
 import ImgWelder2 from '../../public/images/banners/tarde.png'
+import ImgWelder2Mob from '../../public/images/banners/bannerMobileLogoGrey.png'
 import ImgWelder3 from '../../public/images/banners/Noite.png'
+import ImgWelder3Mob from '../../public/images/banners/bannerMobile.png'
 
 
 
 import curriculo from '../../public/pdf/Currículo_2023_AldomarAssolin.pdf'
 import { BsFillFilePdfFill, BsArrowBarRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import Figure from "../components/Figure";
 
 
 
@@ -29,10 +33,12 @@ const Banner = () => {
                     <Col sm={12} className="p-0 m-0">
                         <Carousel fade>
                             <Carousel.Item className="h-100">
-                                <img
-                                    className="d-block w-100 img_carousel"
-                                    src={ImgWelder1}
-                                    alt="First slide"
+                                <Figure
+                                    media650={ImgWelder1}
+                                    media465={ImgWelder1Mob}
+                                    img={ImgWelder1Mob}
+                                    alt="Imagem da logomarca AA"
+                                    title="Imagem da logomarca AA"
                                 />
                                 <Carousel.Caption className='fs-6'>
                                     <Row>
@@ -50,7 +56,7 @@ const Banner = () => {
                                             >
 
                                                 <Link className="mb-3 links_pages" href={curriculo}>
-                                                    <BsFillFilePdfFill width="50" className="mx-2"/>
+                                                    <BsFillFilePdfFill width="50" className="mx-2" />
                                                     Currículo em PDF
                                                 </Link>
 
@@ -60,15 +66,16 @@ const Banner = () => {
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
-                                    src={ImgWelder2}
-                                    alt="Second slide"
+                                <Figure
+                                    media650={ImgWelder2}
+                                    media465={ImgWelder2Mob}
+                                    img={ImgWelder2Mob}
+                                    alt="Imagem da logomarca AA"
+                                    title="Imagem da logomarca AA"
                                 />
-
                                 <Carousel.Caption>
                                     <Row>
-                                        <Col lg={8}>
+                                        <Col sm={12} lg={8}>
                                             <SectionBox
                                                 titles={
                                                     <Title
@@ -83,8 +90,8 @@ const Banner = () => {
                                             >
 
                                                 <Link to="/contact" className="text-center mx-2 mb-3 links_pages">
-                                                    <BsArrowBarRight size={16}  className="mx-2"/>
-                                                        Saiba Mais
+                                                    <BsArrowBarRight size={16} className="mx-2" />
+                                                    Saiba Mais
                                                 </Link>
 
                                             </SectionBox>
@@ -94,10 +101,13 @@ const Banner = () => {
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
-                                    src={ImgWelder3}
-                                    alt="Third slide"
+
+                                <Figure
+                                    media650={ImgWelder3}
+                                    media465={ImgWelder3Mob}
+                                    img={ImgWelder3Mob}
+                                    alt="Imagem da logomarca AA"
+                                    title="Imagem da logomarca AA"
                                 />
 
                                 <Carousel.Caption>
@@ -115,8 +125,8 @@ const Banner = () => {
                                     >
 
                                         <Link to="/contact" className="text-center mx-2 mb-3 links_pages">
-                                            <BsArrowBarRight size={16}  className="mx-2"/>
-                                                Saiba Mais
+                                            <BsArrowBarRight size={16} className="mx-2" />
+                                            Saiba Mais
                                         </Link>
 
                                     </SectionBox>

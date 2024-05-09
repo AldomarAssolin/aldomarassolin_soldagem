@@ -5,14 +5,7 @@ import { Col, Container, Figure, Row } from "react-bootstrap";
 import Section from "../components/Section";
 import SectionBox from '../components/SectionBox'
 import Title from "../components/Title_Section";
-//import TitleEffect from "../components/Title_Effect";
 
-//import styles from '../components/Title_Section.module.css'
-import stylesSection from '../components/Section.module.css'
-//import ReadMore from "../components/ReadMore";
-
-// import ImgWelder1 from '../../public/images/carousel/solda-robo.jpg'
-// import ImgWelder2 from '../../public/images/carousel/trabalhador-soldagem.jpg'
 import Img from '../../public/images/logos/logo-blue.png'
 import Title_Effect from "../components/TitleEffect";
 import { Link } from "react-router-dom";
@@ -25,27 +18,32 @@ const About = () => {
 
   return (
 
-    <Section classes={`about ${stylesSection.section} py-5`}>
+    <Section classes="pt-5">
       <Container>
         <Row>
-          <Col sm={6} className='p-0 mt-5'>
+          <Col sm={6} className='p-0 mt-3 mt-sm-5'>
 
             <Title
               classes='text-start'
               title="Sobre Mim"
-              subtitle="Alguma coisa de subtitulo"
+              subtitle="15 anos de atuação na área de soldagem"
               effect={<Title_Effect />}
             />
             <SectionBox
-              text="Com 15 anos de experiência como soldador e formação técnica sólida, sou Aldomar Assolin. Mergulhei na arte da soldagem, 
-                                        agora trago minha paixão pela precisão e qualidade para o mundo da tecnologia. Conheça minha."
-              classes={` d-flex flex-column align-items-start justify-content-center`}
+              text="Especializado em soldagem GMAW
+                    convencional e GMAWP pulsada, com
+                    amplo conhecimento em operação de
+                    células de soldagem. Possuo habilidades
+                    adicionais em montagem, corte com
+                    maçarico, corte com plasma e usinagem.
+                  "
+              classes={`mb-3 d-flex flex-column align-items-start justify-content-center`}
             >
 
 
-              <Link to="/about" className='links_pages'>
-                <BsArrowBarRight size={16} className="mx-2"/>
-                 Saiba Mais
+              <Link to="/about" className='links_pages mt-4 mt-sm-1'>
+                <BsArrowBarRight size={16} className="mx-2" />
+                Saiba Mais
               </Link>
 
 
@@ -54,9 +52,9 @@ const About = () => {
           </Col>
 
 
-          <Col sm={6} className=" d-flex align-items-center justify-content-end">
+          <Col sm={6} className="d-flex align-items-center justify-content-center justify-content-md-end">
             <SectionBox
-              classes={`${stylesSection.Section_Box_Right}`}
+              classes="mb-0"
             >
               <Figure>
                 <Figure.Image
@@ -64,9 +62,6 @@ const About = () => {
                   alt="Logo AA Tecnology"
                   src={Img}
                 />
-                {/* <Figure.Caption>
-                  Nulla vitae elit libero, a pharetra augue mollis interdum.
-                </Figure.Caption> */}
               </Figure>
 
             </SectionBox>

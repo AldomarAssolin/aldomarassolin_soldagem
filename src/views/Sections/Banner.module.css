@@ -21,7 +21,7 @@
 
 @media screen and (max-width: 992px){
     .banner_box{
-        min-height: 50vh;
+        height: auto;
     }
 }
 
