@@ -1,0 +1,91 @@
+.aside{
+    width: 20vw;
+    min-height: 100vh;
+    margin-left: -20vw;
+    transition: .5s;
+    background-color: #292f44;
+    color: #ccc;
+
+    position: relative;
+}
+
+.aside--show{
+    margin-left: 0;
+}
+
+.btn-arrow{
+    color: black;
+    cursor: pointer;
+}
+
+.btn-arrow:hover{
+    color: #333;
+}
+
+.pi{
+    color: #fff;
+}
+
+.icon-arrow{
+    position: absolute;
+    top: 1em;
+    right: -2em;
+    z-index: 99;
+    transition: .5s;
+}
+
+.icon-arrow-in{
+    right: .75em;
+}
+
+/*ASIDE HEADER*/
+
+.header-aside .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    width: 160px;
+    height: 75px;
+    margin: auto;
+}
+
+.header-aside .logo img{
+    height: 100%;
+}
+
+/*ASIDE MAIN*/
+.aside-top{
+    text-align: center;
+}
+
+aside main ul{
+    padding-left: 1rem;
+}
+
+aside main ul li{
+    margin-bottom: .5em;
+}
+
+aside main ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+aside main ul li a:hover, aside main input:hover{
+    color: #686666;
+}
+
+.logoutInput{
+    width: 100%;
+    padding: 1rem;
+    position: absolute;
+    bottom: 5rem;
+}
+
+aside main input{
+    background: none;
+    border: none;
+    padding-left: 1rem;
+}
+

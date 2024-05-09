@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin-bottom: .5em;
+}
+
+.success{
+    color: green;
+}
+
+.danger{
+    color: brown;
+}
+
+.overflow{
+    height: 74.5vh;
+    overflow-y: scroll;
+    padding: 2em 1rem 1rem;
+    overflow: hidden;
+}
+
+main .list-people{
+    margin-bottom: .5em;
+}
+
+main .user-list{
+    color: #d1d1d1;
+    background-color: #1A1D29;
+    margin-bottom: 1em;
+    padding: .5em;
+    border-radius: .5rem;
+}
+
+main .firstForm form{
+    width: 450px;
+    margin: 0 auto;
+}
+
+main .firstForm form .form-controll{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .75em;
+}
+
+main .firstForm form .form-controll label{
+    margin-bottom: .25em;
+}
+
+main .firstForm form .form-controll input{
+    padding: .25em;
+}
+
+main .firstForm form .form-controll textarea{
+    height: 10rem;
+    padding: .25em;
+    resize: vertical;
+}
+
+main .firstForm form .form-controll select{
+    padding: .25em;
+}
+
+main .firstForm form .form-controll select option{
+    padding: .25em;
+}
+
+main .firstForm form .btn-controll{
+    padding: .5em 0;
+}
+
+main .firstForm form .btn-controll input{
+    color: black;
+    background-color: #ccc;
+    padding: .25em 1.5em;
+    cursor: pointer;
+    border: none;
+}
+
+main .firstForm form .form-controll input,
+main .firstForm form .form-controll select,
+main .firstForm form .form-controll textarea{
+    color: black;
+}
+
+main .firstForm form .btn-controll input:hover{
+    background-color: #333;
+    color: #ccc;
+}

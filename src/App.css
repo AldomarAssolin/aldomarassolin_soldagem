@@ -3,14 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap');
 
 :root{
-  --clr-primary: #16c8e7;
-  --clr-1:#d48e0c ;
-  --clr-secondary: #ee5011;
+  --clr-primary: #2c2aa9;
+  --clr-1:#0b091e ;
+  --clr-secondary: #118aee;
   --fnt-title: bold 2.4em 'Raleway', sans-serif;
   --fnt-subtitle: normal 1.4em 'Montserrat', sans-serif;
   --fnt-text: normal 'Lato', sans-serif;
 
-  --clr-hover1: #ee7511;
+  --clr-hover1: #030c5f;
   --clr-hover: #72ddf0;
 }
 
@@ -94,15 +94,36 @@ h1,h3{
 
 /* Classes utilities */
 
-.links{
+.links, .links_pages{
+  padding: .5rem 2rem;
   text-decoration: none !important;
-  color: var(--clr-secondary) !important;
-  font: var(--fnt-text) !important;
   transition: .3s !important;
 }
 
+.links{
+  color: var(--clr-secondary) !important;
+  font: var(--fnt-text) !important;
+}
+
 .links:hover{
-  color: var(--clr-1) !important;
+  color: var(--clr-hover) !important;
+}
+
+.links_pages{
+  background-color: var(--clr-primary);
+  color: var(--clr-hover);
+  transition: .4s;
+  border-radius: .75rem;
+}
+
+.links_pages:hover{
+  background-color: var(--clr-secondary);
+  color: var(--clr-hover1);
+}
+
+
+.navBar{
+  width: 100%;
 }
 
 .nav-link {
@@ -111,24 +132,52 @@ h1,h3{
   transition: .3s !important;
 }
 
-.active{
-  color: var(--clr-1) !important;
+.nav-bar{
+  position: relative;
 }
 
+.active{
+  color: var(--clr-secondary) !important;
+}
 
+.h75{
+  min-height: 85vh;
+}
 
 .btn_toggle{
   cursor: pointer;
-  background-color: var(--clr-primary);
+  background-color: var(--clr-secondary);
 }
 
-/* .navBar{
-  background-color: rgba(0, 0, 0, .25);
-} */
+.btn_toggle:focus{
+  box-shadow: none;
+}
+
+.text-size{
+  font-size: 1rem;
+}
+
 
 /* HEADER */
 header{
-  background-color: rgba(0, 0, 0, .55);
+  width: 100%;
+  padding: 0 !important;
+  background: linear-gradient(to bottom, #2c2aa9, #141348, #0b091e) !important;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+  /* box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset; */
+  height: 5rem;
+}
+.header-scrolled {
+  height: 3rem;
+}
+
+.header_hidden{
+  margin-top: -100%;
 }
 
 /* FOOTER */
@@ -210,6 +259,9 @@ footer{
   .App-text{
     padding: 1em 0;
   }
+  .text-size{
+    font-size: .75rem;
+  }
 }
 
 @media screen and (max-width:450px){
@@ -218,5 +270,8 @@ footer{
   }
   .App-logo{
     margin: 3em 0;
+  }
+  .text-size{
+    font-size: .5rem;
   }
 }

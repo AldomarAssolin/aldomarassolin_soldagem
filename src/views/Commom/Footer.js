@@ -3,10 +3,11 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-import imgLogo from '../../public/images/logos/android-icon-48x48.png'
+import { Logo } from '../components/Logo';
+
 import { Link } from 'react-router-dom'
 
-export const Footer = () => {
+const Footer = () => {
     return (
         <footer>
             <Container>
@@ -14,7 +15,8 @@ export const Footer = () => {
                     <Col sm={4}>
                         <div className="footer-right">
                             <Link to='/'>
-                                <img src={imgLogo} alt="Logomarca" />
+                                <Logo/>
+                                
                             </Link>
                         </div>
                         
@@ -34,3 +36,5 @@ export const Footer = () => {
         </footer>
     )
 }
+
+export default Footer

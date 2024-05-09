@@ -1,0 +1,22 @@
+.pageLogin{
+    width: 100%;
+    min-height: 100vh;
+    background: url("../../assets/images/background-image-tecno.jpg") center/cover no-repeat;
+    
+    
+}
+
+.sectionLogin{
+    width: 50%;
+    padding: 2rem 1rem; 
+    color: #fff;
+
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, .85);
+}
+
+.sectionLogin button{
+    width: 50%;
+    color: #fff;
+    background: #1882e6;
+}

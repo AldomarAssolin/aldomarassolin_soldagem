@@ -1,0 +1,19 @@
+.layout{
+    display: flex;
+}
+
+.main{
+    width: 100%;
+}
+
+header, footer{
+    color: #fafafa;
+    text-align: center;
+    padding: 1em 0;
+    background: linear-gradient(to bottom,#1A1D29,#292f44);
+}
+
+header.header-layout{
+    box-shadow: 0px 15px 15px #292f44;
+    transition: .5s;
+}

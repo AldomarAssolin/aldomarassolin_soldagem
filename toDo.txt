@@ -1,30 +1,49 @@
 
 Página Inicial do Portfólio
 
-Cabeçalho:
-    [V] Nome e Título: Seu nome e título como "Consultor em Soldagem e Automação Industrial".
-    [] Foto Profissional: Uma foto profissional sua.
-    [V] Slogan: Um slogan breve que destaque sua abordagem inovadora ou compromisso com a excelência.
+HEADER
 
-Seção de Introdução:
-    [] Descrição Pessoal: Uma breve introdução que destaque sua paixão pela soldagem e tecnologia, mesmo sem experiência prévia em consultoria.
-    [] Transição Profissional: Explique de forma sucinta sua transição de soldador e técnico para a consultoria em soldagem e automação industrial.
-    [] Foco na Aprendizagem Contínua: Mencione seu compromisso com a aprendizagem contínua e a busca de conhecimento nessa nova área.
+Configurar header
 
-Seção de Habilidades:
-    [] Habilidades Técnicas: Liste suas habilidades técnicas, como conhecimento em soldagem, programação, automação industrial e qualquer outra habilidade relevante.
-    [] Aprendizado Atual: Destaque as tecnologias e conceitos que você está atualmente estudando para fortalecer sua capacidade de consultoria.
+[] Cabeçalho: Banner
+Carrossel
+
+    [V] Nome e Título: nome e título como "Consultor em Soldagem e Automação Industrial".
+    [V] Foto Profissional: Uma foto profissional.
+    [V] Slogan: Um slogan breve que destaque uma abordagem inovadora ou compromisso com a excelência.
+
+    [] obs: implementar imagem  de acordo com breakpoints.08/05/2024
+
+    [] Criar 1 página para cada link do carrossel ou projeto.
+
+[] Seção Sobre:
+    [V] Descrição Pessoal: Uma breve introdução que destaque mihna paixão pela soldagem e tecnologia, mesmo sem experiência prévia em consultoria.
+    
+    Página Sobre
+        [] Transição Profissional: Explicar de forma sucinta minha transição de soldador e técnico para a consultoria em soldagem e automação industrial.
+        [] Foco na Aprendizagem Contínua: Mencionar meu compromisso com a aprendizagem contínua e a busca de conhecimento nessa nova área.
+
+[] Seção de Habilidades:
+    [] Habilidades Técnicas: Listar minhas habilidades técnicas, como conhecimento em soldagem, programação, automação industrial e qualquer outra habilidade relevante.
+    [] Aprendizado Atual: Destacar as tecnologias e conceitos que estou atualmente estudando para fortalecer minha capacidade de consultoria.
 
 Seção de Projetos Pessoais:
-    [] Projetos Relacionados: Destaque projetos pessoais ou estudos de caso relacionados à soldagem e automação industrial, mesmo que sejam pequenos. Forneça descrições breves e resultados alcançados.
+    [] Projetos Relacionados: Destacar projetos pessoais ou estudos de caso relacionados à soldagem e automação industrial, mesmo que sejam pequenos. Fornecer descrições breves e resultados alcançados.
+
+Seção de repositórios do Github
+    [V] Criar coleção ou album de imagem com cards para os projetos.
+    [] Implementar API para consulta.
 
 Seção de Contato:
-    [] Informações de Contato: Inclua informações de contato, como e-mail e telefone, para que as pessoas possam entrar em contato com você para consultoria.
-    [] Links para Redes Sociais: Inclua links para seu LinkedIn e outras redes sociais profissionais.
+    [] Informações de Contato: Incluir informações de contato, como e-mail e telefone, para que as pessoas possam entrar em contato comigo para consultoria.
+    [] Links para Redes Sociais: Incluir links para LinkedIn e outras redes sociais profissionais.
 
 Rodapé:
     [] Copyright e Informações Legais: Informações de copyright e quaisquer outras informações legais relevantes.
-    [] Lembre-se de que, embora você não tenha experiência direta em consultoria, seu portfólio deve enfatizar seu compromisso com a aprendizagem e seu conhecimento técnico em soldagem e automação industrial. À medida que você adquire experiência e conclui projetos relacionados, pode atualizar seu portfólio para refletir essas conquistas.
+    
+    Lembrar de que, embora eu não tenha experiência direta em consultoria, meu portfólio deve enfatizar meu compromisso 
+    com a aprendizagem e meu conhecimento técnico em soldagem e automação industrial. À medida que adquirir experiência e 
+    concluir projetos relacionados, deverá ser atualizado meu portfólio para refletir essas conquistas.
 
 
 Criar Páginas para Processos e reativar NavLink Processos DropDown
