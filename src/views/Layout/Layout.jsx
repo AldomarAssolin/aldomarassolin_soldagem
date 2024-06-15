@@ -11,7 +11,7 @@ const Layout = () => {
         <>
         
             <Header/>
-                <main className='h75 main-page'>
+                <main className='main-page'>
                     <Outlet/>
                 </main>
             <Footer/>

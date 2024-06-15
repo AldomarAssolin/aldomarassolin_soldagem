@@ -28,8 +28,8 @@
 
 .icon-arrow{
     position: absolute;
-    top: 1em;
-    right: -2em;
+    top: .5em;
+    right: -5em;
     z-index: 99;
     transition: .5s;
 }
@@ -40,13 +40,19 @@
 
 /*ASIDE HEADER*/
 
+.header-aside{
+    background-color: #1A1D29;
+    background: linear-gradient(to bottom,#1A1D29,#292f44);
+    border:1px solid green;
+}
+
 .header-aside .logo{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: .5rem;
-    width: 160px;
-    height: 75px;
+    width: 100%;
+    height: 8vh;
     margin: auto;
 }
 
@@ -56,24 +62,22 @@
 
 /*ASIDE MAIN*/
 .aside-top{
-    text-align: center;
+    text-align: left;
 }
 
-aside main ul{
+.list-aside{
     padding-left: 1rem;
 }
 
-aside main ul li{
-    margin-bottom: .5em;
-}
-
-aside main ul li a{
-    color: #fff;
+.list-aside a{
+    color: #fafafa;
     text-decoration: none;
+    display: block;
+    padding-top: .5rem;
 }
 
-aside main ul li a:hover, aside main input:hover{
-    color: #686666;
+.list-aside a:hover, aside input:hover{
+    color: #292f44;
 }
 
 .logoutInput{
@@ -81,11 +85,7 @@ aside main ul li a:hover, aside main input:hover{
     padding: 1rem;
     position: absolute;
     bottom: 5rem;
-}
-
-aside main input{
-    background: none;
-    border: none;
-    padding-left: 1rem;
+    display: flex;
+    align-items: center;
 }
 

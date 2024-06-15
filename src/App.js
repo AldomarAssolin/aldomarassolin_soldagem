@@ -16,6 +16,7 @@ import Bio from './views/dashboard/pages/Experiences'
 import ExperienceData from './views/dashboard/pages/Experiences'
 import Forms from './views/dashboard/pages/Forms'
 import Login from './views/dashboard/pages/Login'
+import UserForm from './views/dashboard/components/UserForm';
 
 import { authenticate } from './views/dashboard/OAuth/auth';
 import { useEffect, useState } from 'react';
@@ -51,11 +52,12 @@ function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/contact" element={<Contact />} />
         </Route>
-        <Route path="/dashboard" element={isAuthenticated ? <LayoutDsh /> : <Login onLogin={handleLogin} />}>
+        <Route path="/dashboard" element={<LayoutDsh />}>
           <Route index element={<DashboardHome />} />
           <Route path='/dashboard/bio' element={<Bio />} />
           <Route path='/dashboard/experience' element={<ExperienceData />} />
           <Route path='/dashboard/forms' element={<Forms />} />
+          <Route path='/dashboard/UserForm' element={<UserForm />} />
         </Route>
         {/* <Route path='/login' element={<Login />} /> */}
 
@@ -76,4 +78,6 @@ export default App;
           <Route path='/bio' element={<Bio/>}/>
           <Route path='/login' element={<Login/>}/>
         </Route>
+
+        isAuthenticated ? <LayoutDsh /> : <Login onLogin={handleLogin} />
  */

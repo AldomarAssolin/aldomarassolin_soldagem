@@ -6,9 +6,19 @@
     width: 100%;
 }
 
-header, footer{
+.main-dashboard{
+    background-color: #2f3341;
+    min-height: 84vh;
+    color: #fafafa;
+}
+
+.header-layout, .footer-layout{
+    height: 8vh;
     color: #fafafa;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 1em 0;
     background: linear-gradient(to bottom,#1A1D29,#292f44);
 }

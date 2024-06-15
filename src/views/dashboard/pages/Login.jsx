@@ -55,22 +55,6 @@ function Login({ onLogin }) {
                     
                 </Form>
             </div>
-            
-            {/* <form onSubmit={handleSubmit}>
-                <input
-                    type="text"
-                    placeholder="Nome de usuário"
-                    value={username}
-                    onChange={e => setUsername(e.target.value)}
-                />
-                <input
-                    type="password"
-                    placeholder="Senha"
-                    value={password}
-                    onChange={e => setPassword(e.target.value)}
-                />
-                <input type="submit" value="Enviar" />
-            </form> */}
         </div>
     );
 }

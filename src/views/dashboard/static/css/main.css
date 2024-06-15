@@ -21,10 +21,10 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .overflow{
-    height: 74.5vh;
+    height: 79vh;
     overflow-y: scroll;
     padding: 2em 1rem 1rem;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 main .list-people{
