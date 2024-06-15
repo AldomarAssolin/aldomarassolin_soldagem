@@ -38,8 +38,6 @@ function App() {
       alert("Credenciais inválidas! Tente novamente.")
     } else {
       setAuthenticated(true)
-
-      //alert("Tudo OK!")
     }
   };
   // isAuthenticated ? <LayoutDsh /> : <Login onLogin={handleLogin} />
@@ -52,7 +50,7 @@ function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/contact" element={<Contact />} />
         </Route>
-        <Route path="/dashboard" element={<LayoutDsh />}>
+        <Route path="/dashboard" element={isAuthenticated ? <LayoutDsh /> : <Login onLogin={handleLogin} />}>
           <Route index element={<DashboardHome />} />
           <Route path='/dashboard/bio' element={<Bio />} />
           <Route path='/dashboard/experience' element={<ExperienceData />} />
@@ -78,6 +76,4 @@ export default App;
           <Route path='/bio' element={<Bio/>}/>
           <Route path='/login' element={<Login/>}/>
         </Route>
-
-        isAuthenticated ? <LayoutDsh /> : <Login onLogin={handleLogin} />
  */
